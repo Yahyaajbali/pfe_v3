@@ -29,8 +29,11 @@ namespace test_framework
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panelFournisseur = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -47,13 +50,17 @@ namespace test_framework
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelChild = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelFournisseur.SuspendLayout();
             this.panelClient.SuspendLayout();
             this.panelArticle.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelChild.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +91,32 @@ namespace test_framework
             this.panel3.Size = new System.Drawing.Size(200, 375);
             this.panel3.TabIndex = 2;
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(0, 326);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(200, 49);
+            this.button13.TabIndex = 11;
+            this.button13.Text = "Se Deconnecter";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(0, 234);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(200, 23);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Commandes";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // panelFournisseur
             // 
             this.panelFournisseur.Controls.Add(this.button4);
@@ -105,6 +138,7 @@ namespace test_framework
             this.button4.TabIndex = 2;
             this.button4.Text = "Ajouter";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button11
             // 
@@ -117,6 +151,7 @@ namespace test_framework
             this.button11.TabIndex = 1;
             this.button11.Text = "Liste";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -154,6 +189,7 @@ namespace test_framework
             this.button10.TabIndex = 2;
             this.button10.Text = "Ajouter";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -266,6 +302,7 @@ namespace test_framework
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -274,37 +311,34 @@ namespace test_framework
             // 
             // panelChild
             // 
+            this.panelChild.Controls.Add(this.pictureBox2);
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChild.Location = new System.Drawing.Point(200, 0);
             this.panelChild.Name = "panelChild";
             this.panelChild.Size = new System.Drawing.Size(794, 483);
             this.panelChild.TabIndex = 1;
             // 
-            // button5
+            // pictureBox2
             // 
-            this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 234);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(200, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Commandes";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::test_framework.Properties.Resources.logov2_transparent;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(794, 483);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // button13
+            // pictureBox1
             // 
-            this.button13.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(0, 326);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(200, 49);
-            this.button13.TabIndex = 11;
-            this.button13.Text = "Se Deconnecter";
-            this.button13.UseVisualStyleBackColor = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::test_framework.Properties.Resources.logov2_transparentNoName;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -313,6 +347,7 @@ namespace test_framework
             this.ClientSize = new System.Drawing.Size(994, 483);
             this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
@@ -322,6 +357,10 @@ namespace test_framework
             this.panelFournisseur.ResumeLayout(false);
             this.panelClient.ResumeLayout(false);
             this.panelArticle.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panelChild.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -347,6 +386,8 @@ namespace test_framework
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

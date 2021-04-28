@@ -41,7 +41,6 @@ namespace test_framework
             this.searchBoxClt = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panelAdd = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
@@ -185,27 +184,13 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(523, 389);
+            this.button8.Location = new System.Drawing.Point(604, 388);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(132, 40);
             this.button8.TabIndex = 24;
             this.button8.Text = "afficher tout les clients";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(661, 389);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 40);
-            this.button9.TabIndex = 23;
-            this.button9.Text = "nouveau";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button1
             // 
@@ -232,7 +217,7 @@ namespace test_framework
             this.panelAdd.Controls.Add(this.label5);
             this.panelAdd.Controls.Add(this.label3);
             this.panelAdd.Controls.Add(this.label2);
-            this.panelAdd.Location = new System.Drawing.Point(-3, 0);
+            this.panelAdd.Location = new System.Drawing.Point(-1, -2);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(799, 494);
             this.panelAdd.TabIndex = 34;
@@ -240,7 +225,7 @@ namespace test_framework
             // button12
             // 
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(18, 12);
+            this.button12.Location = new System.Drawing.Point(13, 14);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 42;
@@ -368,7 +353,6 @@ namespace test_framework
             this.Controls.Add(this.searchBoxClt);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
             this.Name = "ClientListe";
             this.Text = "ClientListe";
             this.Load += new System.EventHandler(this.ClientListe_Load);
@@ -393,7 +377,6 @@ namespace test_framework
         private System.Windows.Forms.TextBox searchBoxClt;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelAdd;
         private System.Windows.Forms.Button button12;

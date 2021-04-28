@@ -99,5 +99,20 @@ namespace test_framework
         {
             OpenForm(new ClientListe());
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            OpenForm(new ClientAjout());
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FournisseurListe());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OpenForm(new FournisseurAjout());
+        }
     }
 }
