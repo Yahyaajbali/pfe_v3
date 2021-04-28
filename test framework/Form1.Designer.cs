@@ -102,6 +102,7 @@ namespace test_framework
             this.button13.TabIndex = 11;
             this.button13.Text = "Se Deconnecter";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button5
             // 
@@ -116,6 +117,7 @@ namespace test_framework
             this.button5.Text = "Commandes";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panelFournisseur
             // 

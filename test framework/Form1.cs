@@ -64,7 +64,6 @@ namespace test_framework
             panelChild.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
-
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -113,6 +112,16 @@ namespace test_framework
         private void button4_Click(object sender, EventArgs e)
         {
             OpenForm(new FournisseurAjout());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            OpenForm(new Commandes());
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
