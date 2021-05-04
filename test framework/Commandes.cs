@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace test_framework
 {
     public partial class Commandes : Form
     {
-
-        connection ado = new connection();
+        private connection ado = new connection();
 
         public Commandes()
         {
@@ -107,7 +99,6 @@ namespace test_framework
         private void button3_Click(object sender, EventArgs e)
         {
             textBox5.Clear(); textBox6.Clear(); textBox7.Clear(); textBox8.Clear(); comboBox2.Text = "";
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -122,7 +113,7 @@ namespace test_framework
         {
             double pht = 0;
             double sum1 = 0;
-
+ 
             for (int count = 0; count < dataGridView1.Rows.Count; count++)
             {
                 pht = Convert.ToDouble(dataGridView1.Rows[count].Cells["Column4"].Value) * Convert.ToDouble(dataGridView1.Rows[count].Cells["Column3"].Value);
@@ -137,28 +128,28 @@ namespace test_framework
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 
-            int lastCMND = 0;
+            int lastCMD = 0;
             ado.cmd.CommandText = "select max(idf_cmnd) from commande";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
-                lastCMND = int.Parse(ado.dr.GetValue(0).ToString());
+                lastCMD = int.Parse(ado.dr.GetValue(0).ToString());
             }
             ado.dr.Close();
 
             // MessageBox.Show(dateTimePicker1.Text);
-            ado.cmd.CommandText = "insert into bon_livraison(idf_cmnd, date_liv, total_pht_bl, montant_tva_bl, taux_tva_bl, total_ttc_bl) values (" + lastCMND + ", '" + dateTimePicker1.Text + "' , " + sum1 + "," + sum2 + "," + 20 + "," + totalttc + ")";
+            ado.cmd.CommandText = "insert into bon_livraison(idf_cmnd, date_liv, total_pht_bl, montant_tva_bl, taux_tva_bl, total_ttc_bl) values (" + lastCMD + ", '" + dateTimePicker1.Text + "' , " + sum1 + "," + sum2 + "," + 20 + "," + totalttc + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 
-            int lastID = 0;
+            int lastIDF = 0;
             ado.cmd.CommandText = "select max(idf_bl) from bon_livraison";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
-                lastID = int.Parse(ado.dr.GetValue(0).ToString());
+                lastIDF = int.Parse(ado.dr.GetValue(0).ToString());
             }
             ado.dr.Close();
 
@@ -168,12 +159,12 @@ namespace test_framework
             for (int i = 0; i < rowCount - 1; i++)
             {
                 ado.cmd.CommandText = "insert into ligne_bl(ref_art, idf_bl, qte_liv, prix_liv) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString())
-                                        + "," + lastID + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + "," + int.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + ")";
+                                        + "," + lastIDF + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + "," + int.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + ")";
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
 
                 ado.cmd.CommandText = "insert into ligne_cmnd_clt(ref_art, idf_cmnd, qte_commande) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString())
-                                        + "," + lastCMND + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + ")";
+                                        + "," + lastCMD + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + ")";
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
 
@@ -192,7 +183,6 @@ namespace test_framework
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
             }
-
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

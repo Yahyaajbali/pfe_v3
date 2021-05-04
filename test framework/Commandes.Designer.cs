@@ -342,7 +342,7 @@ namespace test_framework
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Name = "Commandes";
-            this.Text = "Commandes";
+            this.Text = "Bon Livraison";
             this.Load += new System.EventHandler(this.Commandes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

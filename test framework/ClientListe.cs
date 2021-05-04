@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace test_framework
 {
     public partial class ClientListe : Form
     {
-        connection ado = new connection();
- 
+        private connection ado = new connection();
+
         public ClientListe()
         {
             InitializeComponent();
@@ -106,7 +100,9 @@ namespace test_framework
 
             MessageBox.Show("done");
         }
+
         private int currentClt = 0;
+
         private void button4_Click(object sender, EventArgs e)
         {
             ado.cmd.CommandText = "delete from client where code_clt =" + currentClt;
@@ -114,6 +110,7 @@ namespace test_framework
             ado.cmd.ExecuteNonQuery();
             MessageBox.Show("suppression faite");
         }
+
         private void ShowSub(Panel panel)
         {
             if (panel.Visible == false) panel.Visible = true;
@@ -153,7 +150,6 @@ namespace test_framework
         private void dataGridClt_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             ClientStuff.client = Convert.ToInt32(dataGridClt.Rows[e.RowIndex].Cells[0].Value);
-
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -164,6 +160,30 @@ namespace test_framework
             }
             SfCommande sousform3 = new SfCommande();
             sousform3.ShowDialog();
+        }
+
+        private void panelAdd_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<SfBl>().Count() == 1)
+            {
+                Application.OpenForms.OfType<SfBl>().First().Close();
+            }
+            SfBl sousform4 = new SfBl();
+            sousform4.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<SfFacture>().Count() == 1)
+            {
+                Application.OpenForms.OfType<SfFacture>().First().Close();
+            }
+            SfFacture sousform5 = new SfFacture();
+            sousform5.ShowDialog();
         }
     }
 }

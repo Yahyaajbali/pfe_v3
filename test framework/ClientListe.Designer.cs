@@ -30,7 +30,6 @@ namespace test_framework
         private void InitializeComponent()
         {
             this.button10 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridClt = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,20 +70,7 @@ namespace test_framework
             this.button10.TabIndex = 30;
             this.button10.Text = "Consulter BL";
             this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(139, 388);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 40);
-            this.button6.TabIndex = 29;
-            this.button6.Text = "Consulter Commandes";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button5
             // 
@@ -92,12 +78,13 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(220, 388);
+            this.button5.Location = new System.Drawing.Point(139, 388);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 40);
             this.button5.TabIndex = 28;
             this.button5.Text = "Consulter Factures";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridClt
             // 
@@ -217,10 +204,11 @@ namespace test_framework
             this.panelAdd.Controls.Add(this.label5);
             this.panelAdd.Controls.Add(this.label3);
             this.panelAdd.Controls.Add(this.label2);
-            this.panelAdd.Location = new System.Drawing.Point(-1, -2);
+            this.panelAdd.Location = new System.Drawing.Point(494, 2);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(799, 494);
             this.panelAdd.TabIndex = 34;
+            this.panelAdd.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdd_Paint);
             // 
             // button12
             // 
@@ -347,7 +335,6 @@ namespace test_framework
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridClt);
             this.Controls.Add(this.searchBoxClt);
@@ -366,7 +353,6 @@ namespace test_framework
 
         #endregion
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dataGridClt;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

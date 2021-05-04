@@ -49,6 +49,7 @@ namespace test_framework
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@ namespace test_framework
             this.prix_ht_stock.Location = new System.Drawing.Point(533, 405);
             this.prix_ht_stock.Margin = new System.Windows.Forms.Padding(2);
             this.prix_ht_stock.Name = "prix_ht_stock";
+            this.prix_ht_stock.ReadOnly = true;
             this.prix_ht_stock.Size = new System.Drawing.Size(92, 20);
             this.prix_ht_stock.TabIndex = 51;
             // 
@@ -75,6 +77,7 @@ namespace test_framework
             this.qte_stock.Location = new System.Drawing.Point(533, 381);
             this.qte_stock.Margin = new System.Windows.Forms.Padding(2);
             this.qte_stock.Name = "qte_stock";
+            this.qte_stock.ReadOnly = true;
             this.qte_stock.Size = new System.Drawing.Size(92, 20);
             this.qte_stock.TabIndex = 50;
             // 
@@ -83,6 +86,7 @@ namespace test_framework
             this.design_art.Location = new System.Drawing.Point(300, 402);
             this.design_art.Margin = new System.Windows.Forms.Padding(2);
             this.design_art.Name = "design_art";
+            this.design_art.ReadOnly = true;
             this.design_art.Size = new System.Drawing.Size(92, 20);
             this.design_art.TabIndex = 49;
             // 
@@ -91,6 +95,7 @@ namespace test_framework
             this.rayon.Location = new System.Drawing.Point(300, 424);
             this.rayon.Margin = new System.Windows.Forms.Padding(2);
             this.rayon.Name = "rayon";
+            this.rayon.ReadOnly = true;
             this.rayon.Size = new System.Drawing.Size(92, 20);
             this.rayon.TabIndex = 48;
             // 
@@ -99,6 +104,7 @@ namespace test_framework
             this.ref_art.Location = new System.Drawing.Point(300, 380);
             this.ref_art.Margin = new System.Windows.Forms.Padding(2);
             this.ref_art.Name = "ref_art";
+            this.ref_art.ReadOnly = true;
             this.ref_art.Size = new System.Drawing.Size(92, 20);
             this.ref_art.TabIndex = 47;
             // 
@@ -213,6 +219,10 @@ namespace test_framework
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // ArticleSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,5 +276,6 @@ namespace test_framework
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

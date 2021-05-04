@@ -49,18 +49,18 @@ namespace test_framework
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChild = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelFournisseur.SuspendLayout();
             this.panelClient.SuspendLayout();
             this.panelArticle.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChild.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -109,24 +109,25 @@ namespace test_framework
             this.button5.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button5.Dock = System.Windows.Forms.DockStyle.Top;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(0, 234);
+            this.button5.Location = new System.Drawing.Point(0, 232);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(200, 23);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Commandes";
+            this.button5.Text = "Bon Livraison Client";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panelFournisseur
             // 
+            this.panelFournisseur.Controls.Add(this.button8);
             this.panelFournisseur.Controls.Add(this.button4);
             this.panelFournisseur.Controls.Add(this.button11);
             this.panelFournisseur.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFournisseur.Location = new System.Drawing.Point(0, 187);
+            this.panelFournisseur.Location = new System.Drawing.Point(0, 162);
             this.panelFournisseur.Name = "panelFournisseur";
-            this.panelFournisseur.Size = new System.Drawing.Size(200, 47);
+            this.panelFournisseur.Size = new System.Drawing.Size(200, 70);
             this.panelFournisseur.TabIndex = 9;
             // 
             // button4
@@ -138,7 +139,7 @@ namespace test_framework
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 23);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Ajouter";
+            this.button4.Text = "Ajouter Fournisseur";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -160,7 +161,7 @@ namespace test_framework
             this.button12.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button12.Dock = System.Windows.Forms.DockStyle.Top;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(0, 164);
+            this.button12.Location = new System.Drawing.Point(0, 139);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button12.Size = new System.Drawing.Size(200, 23);
@@ -175,7 +176,7 @@ namespace test_framework
             this.panelClient.Controls.Add(this.button10);
             this.panelClient.Controls.Add(this.button9);
             this.panelClient.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClient.Location = new System.Drawing.Point(0, 117);
+            this.panelClient.Location = new System.Drawing.Point(0, 92);
             this.panelClient.Name = "panelClient";
             this.panelClient.Size = new System.Drawing.Size(200, 47);
             this.panelClient.TabIndex = 7;
@@ -211,7 +212,7 @@ namespace test_framework
             this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 94);
+            this.button3.Location = new System.Drawing.Point(0, 69);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(200, 23);
@@ -224,13 +225,12 @@ namespace test_framework
             // panelArticle
             // 
             this.panelArticle.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panelArticle.Controls.Add(this.button8);
             this.panelArticle.Controls.Add(this.button7);
             this.panelArticle.Controls.Add(this.button6);
             this.panelArticle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelArticle.Location = new System.Drawing.Point(0, 23);
             this.panelArticle.Name = "panelArticle";
-            this.panelArticle.Size = new System.Drawing.Size(200, 71);
+            this.panelArticle.Size = new System.Drawing.Size(200, 46);
             this.panelArticle.TabIndex = 1;
             // 
             // button8
@@ -242,7 +242,7 @@ namespace test_framework
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 24);
             this.button8.TabIndex = 2;
-            this.button8.Text = "Ajouter";
+            this.button8.Text = "Factures";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -255,7 +255,7 @@ namespace test_framework
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(200, 23);
             this.button7.TabIndex = 1;
-            this.button7.Text = "Catalogue";
+            this.button7.Text = "Stock";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -311,6 +311,17 @@ namespace test_framework
             this.panel2.Size = new System.Drawing.Size(200, 85);
             this.panel2.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::test_framework.Properties.Resources.logov2_transparentNoName;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panelChild
             // 
             this.panelChild.Controls.Add(this.pictureBox2);
@@ -331,17 +342,6 @@ namespace test_framework
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::test_framework.Properties.Resources.logov2_transparentNoName;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,9 +360,9 @@ namespace test_framework
             this.panelClient.ResumeLayout(false);
             this.panelArticle.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChild.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

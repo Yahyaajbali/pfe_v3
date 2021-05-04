@@ -52,6 +52,7 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
@@ -110,6 +111,18 @@
     <Compile Include="ArticleSearch.Designer.cs">
       <DependentUpon>ArticleSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fact.cs">
+      <DependentUpon>Fact.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="BL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ClientAjout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,11 +175,17 @@
     <Compile Include="Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="SfCommande.cs">
+    <Compile Include="SfBl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SfCommande.Designer.cs">
-      <DependentUpon>SfCommande.cs</DependentUpon>
+    <Compile Include="SfBl.Designer.cs">
+      <DependentUpon>SfBl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SfFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SfFacture.Designer.cs">
+      <DependentUpon>SfFacture.cs</DependentUpon>
     </Compile>
     <Compile Include="welcome.cs">
       <SubType>Form</SubType>
@@ -182,6 +201,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArticleSearch.resx">
       <DependentUpon>ArticleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fact.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Fact.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BL.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientAjout.resx">
       <DependentUpon>ClientAjout.cs</DependentUpon>
@@ -219,8 +246,11 @@
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SfCommande.resx">
-      <DependentUpon>SfCommande.cs</DependentUpon>
+    <EmbeddedResource Include="SfBl.resx">
+      <DependentUpon>SfBl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SfFacture.resx">
+      <DependentUpon>SfFacture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="welcome.resx">
       <DependentUpon>welcome.cs</DependentUpon>
