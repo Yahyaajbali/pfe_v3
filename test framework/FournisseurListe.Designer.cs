@@ -39,12 +39,13 @@ namespace test_framework
             this.column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
             this.searchBoxFrs = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panelAjout = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,8 +64,6 @@ namespace test_framework
             this.tele_frs = new System.Windows.Forms.TextBox();
             this.raison_social = new System.Windows.Forms.TextBox();
             this.ICE = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFrs)).BeginInit();
             this.panelAjout.SuspendLayout();
             this.SuspendLayout();
@@ -152,21 +151,13 @@ namespace test_framework
             this.column9.Name = "column9";
             this.column9.Width = 125;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(518, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 13);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "ID fournisseur";
-            // 
             // searchBoxFrs
             // 
             this.searchBoxFrs.Location = new System.Drawing.Point(594, 65);
             this.searchBoxFrs.Name = "searchBoxFrs";
             this.searchBoxFrs.Size = new System.Drawing.Size(100, 20);
             this.searchBoxFrs.TabIndex = 17;
+            this.searchBoxFrs.TextChanged += new System.EventHandler(this.searchBoxFrs_TextChanged);
             // 
             // button6
             // 
@@ -227,6 +218,27 @@ namespace test_framework
             this.panelAjout.Name = "panelAjout";
             this.panelAjout.Size = new System.Drawing.Size(801, 491);
             this.panelAjout.TabIndex = 44;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(606, 404);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 39);
+            this.button2.TabIndex = 64;
+            this.button2.Text = "Ajouter";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(20, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 63;
+            this.button1.Text = "Fermer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button7
             // 
@@ -379,27 +391,6 @@ namespace test_framework
             this.ICE.Size = new System.Drawing.Size(100, 20);
             this.ICE.TabIndex = 43;
             // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(20, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 63;
-            this.button1.Text = "Fermer";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(606, 404);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 39);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // FournisseurListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,7 +399,6 @@ namespace test_framework
             this.Controls.Add(this.panelAjout);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.dataGridFrs);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.searchBoxFrs);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -435,7 +425,6 @@ namespace test_framework
         private System.Windows.Forms.DataGridViewTextBoxColumn column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn column9;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox searchBoxFrs;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

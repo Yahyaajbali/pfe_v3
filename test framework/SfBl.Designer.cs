@@ -49,6 +49,7 @@ namespace test_framework
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(213, 412);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 26);
@@ -59,6 +60,7 @@ namespace test_framework
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(450, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 26);
@@ -78,6 +80,7 @@ namespace test_framework
             this.dataGridView1.Size = new System.Drawing.Size(726, 336);
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // SfBl
@@ -90,6 +93,7 @@ namespace test_framework
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SfBl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SfBl";
             this.Load += new System.EventHandler(this.SfBl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

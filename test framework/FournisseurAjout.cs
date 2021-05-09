@@ -20,7 +20,7 @@ namespace test_framework
                 return;
             }//making sure no input box is empty, gotta be full :)
             ado.cmd.CommandText = "insert into fournisseur(ICE, raison_social,tele_frs,email_frs,registre_com,Id_Fiscale,adresse,ville) " +
-                "values (" + ICE.Text + "','" + raison_social.Text + "','" + tele_frs.Text + "','" +
+                "values ('" + ICE.Text + "','" + raison_social.Text + "','" + tele_frs.Text + "','" +
                 email_frs.Text + "','" + registre_com.Text + "','" + id_fiscale.Text + "','" + adresse.Text + "','" +
                 ville.Text + "')";
             ado.cmd.Connection = ado.cn;
@@ -40,6 +40,7 @@ namespace test_framework
 
         private void FournisseurAjout_Load(object sender, EventArgs e)
         {
+            ado.Connect();
             button7.Enabled = false;
             button3.Enabled = false;
         }

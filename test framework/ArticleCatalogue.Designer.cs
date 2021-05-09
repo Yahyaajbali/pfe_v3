@@ -112,6 +112,8 @@ namespace test_framework
             // 
             // dataGridArt
             // 
+            this.dataGridArt.AllowUserToAddRows = false;
+            this.dataGridArt.AllowUserToDeleteRows = false;
             this.dataGridArt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,6 +128,7 @@ namespace test_framework
             this.dataGridArt.Location = new System.Drawing.Point(51, 85);
             this.dataGridArt.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridArt.Name = "dataGridArt";
+            this.dataGridArt.ReadOnly = true;
             this.dataGridArt.RowHeadersWidth = 51;
             this.dataGridArt.RowTemplate.Height = 24;
             this.dataGridArt.Size = new System.Drawing.Size(678, 297);
@@ -136,6 +139,7 @@ namespace test_framework
             this.Column7.HeaderText = "Reference";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Width = 125;
             // 
             // Column8
@@ -143,6 +147,7 @@ namespace test_framework
             this.Column8.HeaderText = "Designation";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             this.Column8.Width = 125;
             // 
             // Column9
@@ -150,6 +155,7 @@ namespace test_framework
             this.Column9.HeaderText = "Quantité ";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
             this.Column9.Width = 125;
             // 
             // Column10
@@ -160,6 +166,7 @@ namespace test_framework
             this.Column10.HeaderText = "Prix UHT";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             this.Column10.Width = 125;
             // 
             // Column11
@@ -167,12 +174,14 @@ namespace test_framework
             this.Column11.HeaderText = "Taux TVA";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             this.Column11.Width = 125;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Code QR";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // ArticleCatalogue
             // 

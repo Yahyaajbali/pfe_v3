@@ -152,15 +152,7 @@ namespace test_framework
             ClientStuff.client = Convert.ToInt32(dataGridClt.Rows[e.RowIndex].Cells[0].Value);
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (Application.OpenForms.OfType<SfCommande>().Count() == 1)
-            {
-                Application.OpenForms.OfType<SfCommande>().First().Close();
-            }
-            SfCommande sousform3 = new SfCommande();
-            sousform3.ShowDialog();
-        }
+        
 
         private void panelAdd_Paint(object sender, PaintEventArgs e)
         {
@@ -184,6 +176,20 @@ namespace test_framework
             }
             SfFacture sousform5 = new SfFacture();
             sousform5.ShowDialog();
+        }
+
+        private void searchBoxClt_TextChanged(object sender, EventArgs e)
+        {
+            dataGridClt.Rows.Clear();
+            ado.cmd.CommandText = "select * from client where code_clt like '%" + searchBoxClt.Text + "%' or cin_clt like '%" + searchBoxClt.Text + "%' or raisonsocial like '%" + searchBoxClt.Text + "%' or tele_clt like '%" + searchBoxClt.Text + "%' or email_clt like '%" + searchBoxClt.Text + "%'";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                dataGridClt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(),
+                    ado.dr.GetValue(3).ToString(), ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+            }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
+            ado.dr.Close();//closes the reader
         }
     }
 }

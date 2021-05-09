@@ -156,7 +156,7 @@ namespace test_framework
             //MessageBox.Show(lastID.ToString());
             int rowCount = dataGridView1.Rows.Count;
             //MessageBox.Show(rowCount.ToString());
-            for (int i = 0; i < rowCount - 1; i++)
+            for (int i = 0; i < rowCount; i++)
             {
                 ado.cmd.CommandText = "insert into ligne_bl(ref_art, idf_bl, qte_liv, prix_liv) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString())
                                         + "," + lastIDF + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + "," + int.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + ")";
@@ -183,6 +183,7 @@ namespace test_framework
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
             }
+            MessageBox.Show("ajout avec success");
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

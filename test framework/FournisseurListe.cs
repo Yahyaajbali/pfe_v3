@@ -15,7 +15,7 @@ namespace test_framework
         private void button6_Click(object sender, EventArgs e)
         {
             dataGridFrs.Rows.Clear();
-            ado.cmd.CommandText = "select * from fournisseur where idf_frs = " + int.Parse(searchBoxFrs.Text);
+            ado.cmd.CommandText = "select * from fournisseur where idf_frs like '%" + int.Parse(searchBoxFrs.Text) + "%' or ICE like like '%" + int.Parse(searchBoxFrs.Text) + "%' or raison_social like '%" + int.Parse(searchBoxFrs.Text) + "%' or tele_frs like '%" + int.Parse(searchBoxFrs.Text) + "%' or email_frs like '%" + int.Parse(searchBoxFrs.Text) + "%' or registre_com like '%" + int.Parse(searchBoxFrs.Text) + "%' or Id_fiscale like '%" + int.Parse(searchBoxFrs.Text) + "%' or ville like '%" + int.Parse(searchBoxFrs.Text) + "%' or adresse like '%" + int.Parse(searchBoxFrs.Text) + "%'";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
@@ -26,6 +26,17 @@ namespace test_framework
             }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
             ado.dr.Close();//closes the reader
         }
+
+    //    dataGridClt.Rows.Clear();
+    //        ado.cmd.CommandText = "select * from client where code_clt like '%" + searchBoxClt.Text + "%' or cin_clt like '%" + searchBoxClt.Text + "%' or raisonsocial like '%" + searchBoxClt.Text + "%' or tele_clt like '%" + searchBoxClt.Text + "%' or email_clt like '%" + searchBoxClt.Text + "%'";
+    //        ado.cmd.Connection = ado.cn;
+    //        ado.dr = ado.cmd.ExecuteReader();
+    //        while (ado.dr.Read())
+    //        {
+    //            dataGridClt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(),
+    //                ado.dr.GetValue(3).ToString(), ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+    //        }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
+    //ado.dr.Close();//closes the reader
 
         private void FournisseurListe_Load(object sender, EventArgs e)
         {
@@ -118,6 +129,21 @@ namespace test_framework
             }
             ado.dr.Close();
             panelAjout.Visible = true;
+        }
+
+        private void searchBoxFrs_TextChanged(object sender, EventArgs e)
+        {
+            dataGridFrs.Rows.Clear();
+            ado.cmd.CommandText = "select * from fournisseur where idf_frs like '%" + searchBoxFrs.Text + "%' or ICE like '%" + searchBoxFrs.Text + "%' or raison_social like '%" + searchBoxFrs.Text + "%' or tele_frs like '%" + searchBoxFrs.Text + "%' or email_frs like '%" + searchBoxFrs.Text + "%' or registre_com like '%" + searchBoxFrs.Text + "%' or Id_fiscale like '%" + searchBoxFrs.Text + "%' or ville like '%" + searchBoxFrs.Text + "%' or adresse like '%" + searchBoxFrs.Text + "%'";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                dataGridFrs.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(1).ToString(), ado.dr.GetValue(2).ToString(),
+                    ado.dr.GetValue(3).ToString(), ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString(),
+                    ado.dr.GetValue(6).ToString(), ado.dr.GetValue(7).ToString(), ado.dr.GetValue(8).ToString());
+            }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
+            ado.dr.Close();//closes the reader
         }
     }
 }

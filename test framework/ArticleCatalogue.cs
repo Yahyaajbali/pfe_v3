@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace test_framework
@@ -31,11 +33,15 @@ namespace test_framework
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
+                strQr = Convert.FromBase64String(ado.dr["qr"].ToString());
+                var Qr = byteArrayToImage(byteArrayIn: strQr);
                 dataGridArt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(), ado.dr.GetValue(3).ToString(),
-                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString(), Qr);
             }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
             ado.dr.Close();//closes the reader
         }
+
+        private byte[] strQr;
 
         private void ArticleCatalogue_Load(object sender, EventArgs e)
         {
@@ -47,10 +53,19 @@ namespace test_framework
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
+                strQr = Convert.FromBase64String(ado.dr["qr"].ToString());
+                var Qr = byteArrayToImage(byteArrayIn: strQr);
                 dataGridArt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(), ado.dr.GetValue(3).ToString(),
-                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString(), Qr);
             }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
             ado.dr.Close();//closes the reader
+        }
+
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -61,8 +76,10 @@ namespace test_framework
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
+                strQr = Convert.FromBase64String(ado.dr["qr"].ToString());
+                var Qr = byteArrayToImage(byteArrayIn: strQr);
                 dataGridArt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(), ado.dr.GetValue(3).ToString(),
-                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+                    ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString(), Qr);
             }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
             ado.dr.Close();//closes the reader
         }

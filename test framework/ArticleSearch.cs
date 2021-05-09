@@ -2,6 +2,7 @@
 using AForge.Video.DirectShow;
 using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using ZXing;
 
@@ -33,6 +34,7 @@ namespace test_framework
             }
             ado.cmd.CommandText = "select * from article where ref_art =" + int.Parse(searchBox.Text);
             ado.cmd.Connection = ado.cn;
+            byte[] strQr;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
@@ -41,8 +43,18 @@ namespace test_framework
                 design_art.Text = (ado.dr.GetValue(2)).ToString();
                 qte_stock.Text = (ado.dr.GetValue(3)).ToString();
                 prix_ht_stock.Text = (ado.dr.GetValue(4)).ToString();
-            } //take whats in searchbox and match with database, then print the result in labels
-            ado.dr.Close();//closes the reader
+                strQr = Convert.FromBase64String(ado.dr["qr"].ToString());
+                var Qr = byteArrayToImage(byteArrayIn: strQr);
+                pictureBox1.Image = Qr;
+            }                   //take whats in searchbox and match with database, then print the result in labels
+            ado.dr.Close();     //closes the reader
+        }
+
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
         }
 
         private void ArticleSearch_Load(object sender, EventArgs e)
@@ -101,8 +113,8 @@ namespace test_framework
                         design_art.Text = (ado.dr.GetValue(2)).ToString();
                         qte_stock.Text = (ado.dr.GetValue(3)).ToString();
                         prix_ht_stock.Text = (ado.dr.GetValue(4)).ToString();
-                    }// takes the qr results and matches them with database, then prints results in labels
-                    ado.dr.Close();//closes the reader
+                    }
+                    ado.dr.Close();
                     timer1.Stop();
 
                     if (captureDevice.IsRunning)

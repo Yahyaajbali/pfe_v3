@@ -45,24 +45,29 @@ namespace test_framework
             this.button12.TabIndex = 51;
             this.button12.Text = "Fermer";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(213, 412);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 26);
             this.button2.TabIndex = 50;
             this.button2.Text = "Imprimer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(450, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 26);
             this.button1.TabIndex = 49;
             this.button1.Text = "Retour";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -74,6 +79,8 @@ namespace test_framework
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(726, 336);
             this.dataGridView1.TabIndex = 48;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // SfFacture
             // 
@@ -85,7 +92,9 @@ namespace test_framework
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SfFacture";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SfFacture";
+            this.Load += new System.EventHandler(this.SfFacture_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

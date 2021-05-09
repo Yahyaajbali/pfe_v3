@@ -88,6 +88,8 @@ namespace test_framework
             // 
             // dataGridClt
             // 
+            this.dataGridClt.AllowUserToAddRows = false;
+            this.dataGridClt.AllowUserToDeleteRows = false;
             this.dataGridClt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -100,6 +102,7 @@ namespace test_framework
             this.Column6});
             this.dataGridClt.Location = new System.Drawing.Point(58, 93);
             this.dataGridClt.Name = "dataGridClt";
+            this.dataGridClt.ReadOnly = true;
             this.dataGridClt.RowHeadersWidth = 51;
             this.dataGridClt.Size = new System.Drawing.Size(678, 289);
             this.dataGridClt.TabIndex = 27;
@@ -150,6 +153,7 @@ namespace test_framework
             this.searchBoxClt.Name = "searchBoxClt";
             this.searchBoxClt.Size = new System.Drawing.Size(100, 20);
             this.searchBoxClt.TabIndex = 26;
+            this.searchBoxClt.TextChanged += new System.EventHandler(this.searchBoxClt_TextChanged);
             // 
             // button7
             // 
@@ -204,7 +208,7 @@ namespace test_framework
             this.panelAdd.Controls.Add(this.label5);
             this.panelAdd.Controls.Add(this.label3);
             this.panelAdd.Controls.Add(this.label2);
-            this.panelAdd.Location = new System.Drawing.Point(494, 2);
+            this.panelAdd.Location = new System.Drawing.Point(-3, -2);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(799, 494);
             this.panelAdd.TabIndex = 34;

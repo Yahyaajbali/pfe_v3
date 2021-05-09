@@ -111,5 +111,10 @@ namespace test_framework
             idf_bl = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
