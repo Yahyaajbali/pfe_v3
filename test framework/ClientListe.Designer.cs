@@ -29,8 +29,8 @@ namespace test_framework
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button10 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridClt = new System.Windows.Forms.DataGridView();
@@ -98,22 +98,22 @@ namespace test_framework
             // 
             this.dataGridClt.AllowUserToAddRows = false;
             this.dataGridClt.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridClt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridClt.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridClt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridClt.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataGridClt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridClt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridClt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridClt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridClt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -179,7 +179,7 @@ namespace test_framework
             this.searchBoxClt.Location = new System.Drawing.Point(525, 51);
             this.searchBoxClt.Margin = new System.Windows.Forms.Padding(4);
             this.searchBoxClt.Name = "searchBoxClt";
-            this.searchBoxClt.Size = new System.Drawing.Size(129, 25);
+            this.searchBoxClt.Size = new System.Drawing.Size(129, 21);
             this.searchBoxClt.TabIndex = 26;
             this.searchBoxClt.TextChanged += new System.EventHandler(this.searchBoxClt_TextChanged);
             // 
@@ -246,10 +246,10 @@ namespace test_framework
             this.panelAdd.Controls.Add(this.label3);
             this.panelAdd.Controls.Add(this.label2);
             this.panelAdd.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.panelAdd.Location = new System.Drawing.Point(-4, 593);
+            this.panelAdd.Location = new System.Drawing.Point(-4, -1);
             this.panelAdd.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdd.Name = "panelAdd";
-            this.panelAdd.Size = new System.Drawing.Size(1065, 38);
+            this.panelAdd.Size = new System.Drawing.Size(1065, 632);
             this.panelAdd.TabIndex = 34;
             this.panelAdd.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdd_Paint);
             // 
@@ -313,7 +313,7 @@ namespace test_framework
             this.email_clt.Location = new System.Drawing.Point(529, 340);
             this.email_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email_clt.Name = "email_clt";
-            this.email_clt.Size = new System.Drawing.Size(121, 25);
+            this.email_clt.Size = new System.Drawing.Size(121, 21);
             this.email_clt.TabIndex = 37;
             // 
             // tele_clt
@@ -321,7 +321,7 @@ namespace test_framework
             this.tele_clt.Location = new System.Drawing.Point(529, 285);
             this.tele_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tele_clt.Name = "tele_clt";
-            this.tele_clt.Size = new System.Drawing.Size(121, 25);
+            this.tele_clt.Size = new System.Drawing.Size(121, 21);
             this.tele_clt.TabIndex = 36;
             // 
             // nom_clt
@@ -329,7 +329,7 @@ namespace test_framework
             this.nom_clt.Location = new System.Drawing.Point(529, 226);
             this.nom_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nom_clt.Name = "nom_clt";
-            this.nom_clt.Size = new System.Drawing.Size(121, 25);
+            this.nom_clt.Size = new System.Drawing.Size(121, 21);
             this.nom_clt.TabIndex = 35;
             // 
             // cin_clt
@@ -337,7 +337,7 @@ namespace test_framework
             this.cin_clt.Location = new System.Drawing.Point(529, 166);
             this.cin_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cin_clt.Name = "cin_clt";
-            this.cin_clt.Size = new System.Drawing.Size(121, 25);
+            this.cin_clt.Size = new System.Drawing.Size(121, 21);
             this.cin_clt.TabIndex = 34;
             // 
             // label6
@@ -345,7 +345,7 @@ namespace test_framework
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(411, 344);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 19);
+            this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 33;
             this.label6.Text = "Email";
             // 
@@ -354,7 +354,7 @@ namespace test_framework
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(411, 289);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 19);
+            this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 32;
             this.label5.Text = "GSM";
             // 
@@ -363,7 +363,7 @@ namespace test_framework
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(411, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 19);
+            this.label3.Size = new System.Drawing.Size(71, 13);
             this.label3.TabIndex = 31;
             this.label3.Text = "raison social";
             // 
@@ -372,13 +372,13 @@ namespace test_framework
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(411, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 19);
+            this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 30;
             this.label2.Text = "CIN ";
             // 
             // ClientListe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1056, 631);
