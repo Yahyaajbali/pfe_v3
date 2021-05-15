@@ -53,180 +53,208 @@ namespace test_framework
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(598, 403);
+            this.button2.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button2.Location = new System.Drawing.Point(668, 606);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 39);
+            this.button2.Size = new System.Drawing.Size(112, 60);
             this.button2.TabIndex = 84;
             this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
+            this.button1.Location = new System.Drawing.Point(1066, 693);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 83;
-            this.button1.Text = "Fermer";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.MidnightBlue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(436, 403);
+            this.button7.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button7.Location = new System.Drawing.Point(425, 606);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 39);
+            this.button7.Size = new System.Drawing.Size(112, 60);
             this.button7.TabIndex = 82;
             this.button7.Text = "Supprimer";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(517, 403);
+            this.button3.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button3.Location = new System.Drawing.Point(546, 606);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 39);
+            this.button3.Size = new System.Drawing.Size(112, 60);
             this.button3.TabIndex = 81;
             this.button3.Text = "Modifier";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(219, 187);
+            this.label9.Location = new System.Drawing.Point(328, 288);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 13);
+            this.label9.Size = new System.Drawing.Size(39, 20);
             this.label9.TabIndex = 80;
             this.label9.Text = "Ville";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(219, 147);
+            this.label8.Location = new System.Drawing.Point(328, 226);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.Size = new System.Drawing.Size(65, 20);
             this.label8.TabIndex = 79;
             this.label8.Text = "Adresse";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(219, 347);
+            this.label1.Location = new System.Drawing.Point(328, 534);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 78;
             this.label1.Text = "ID fiscale";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(219, 307);
+            this.label6.Location = new System.Drawing.Point(328, 472);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 13);
+            this.label6.Size = new System.Drawing.Size(154, 20);
             this.label6.TabIndex = 77;
             this.label6.Text = "Registre Commercial";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(219, 267);
+            this.label5.Location = new System.Drawing.Point(328, 411);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 76;
             this.label5.Text = "E-mail";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(219, 227);
+            this.label4.Location = new System.Drawing.Point(328, 349);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.Size = new System.Drawing.Size(42, 20);
             this.label4.TabIndex = 75;
             this.label4.Text = "GSM";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(219, 107);
+            this.label3.Location = new System.Drawing.Point(328, 165);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.Size = new System.Drawing.Size(100, 20);
             this.label3.TabIndex = 74;
             this.label3.Text = "Raison Social";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 67);
+            this.label2.Location = new System.Drawing.Point(328, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(31, 20);
             this.label2.TabIndex = 73;
             this.label2.Text = "ICE";
             // 
             // ville
             // 
-            this.ville.Location = new System.Drawing.Point(378, 184);
+            this.ville.Location = new System.Drawing.Point(567, 282);
+            this.ville.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ville.Name = "ville";
-            this.ville.Size = new System.Drawing.Size(165, 20);
+            this.ville.Size = new System.Drawing.Size(246, 27);
             this.ville.TabIndex = 72;
             // 
             // adresse
             // 
-            this.adresse.Location = new System.Drawing.Point(378, 144);
+            this.adresse.Location = new System.Drawing.Point(567, 221);
+            this.adresse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.adresse.Multiline = true;
             this.adresse.Name = "adresse";
-            this.adresse.Size = new System.Drawing.Size(202, 20);
+            this.adresse.Size = new System.Drawing.Size(301, 29);
             this.adresse.TabIndex = 71;
             // 
             // id_fiscale
             // 
-            this.id_fiscale.Location = new System.Drawing.Point(378, 344);
+            this.id_fiscale.Location = new System.Drawing.Point(567, 529);
+            this.id_fiscale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.id_fiscale.Name = "id_fiscale";
-            this.id_fiscale.Size = new System.Drawing.Size(100, 20);
+            this.id_fiscale.Size = new System.Drawing.Size(148, 27);
             this.id_fiscale.TabIndex = 70;
             // 
             // registre_com
             // 
-            this.registre_com.Location = new System.Drawing.Point(378, 304);
+            this.registre_com.Location = new System.Drawing.Point(567, 468);
+            this.registre_com.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registre_com.Name = "registre_com";
-            this.registre_com.Size = new System.Drawing.Size(100, 20);
+            this.registre_com.Size = new System.Drawing.Size(148, 27);
             this.registre_com.TabIndex = 69;
             // 
             // email_frs
             // 
-            this.email_frs.Location = new System.Drawing.Point(378, 264);
+            this.email_frs.Location = new System.Drawing.Point(567, 406);
+            this.email_frs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.email_frs.Name = "email_frs";
-            this.email_frs.Size = new System.Drawing.Size(100, 20);
+            this.email_frs.Size = new System.Drawing.Size(148, 27);
             this.email_frs.TabIndex = 68;
             // 
             // tele_frs
             // 
-            this.tele_frs.Location = new System.Drawing.Point(378, 224);
+            this.tele_frs.Location = new System.Drawing.Point(567, 345);
+            this.tele_frs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tele_frs.Name = "tele_frs";
-            this.tele_frs.Size = new System.Drawing.Size(100, 20);
+            this.tele_frs.Size = new System.Drawing.Size(148, 27);
             this.tele_frs.TabIndex = 67;
             // 
             // raison_social
             // 
-            this.raison_social.Location = new System.Drawing.Point(378, 104);
+            this.raison_social.Location = new System.Drawing.Point(567, 160);
+            this.raison_social.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.raison_social.Name = "raison_social";
-            this.raison_social.Size = new System.Drawing.Size(100, 20);
+            this.raison_social.Size = new System.Drawing.Size(148, 27);
             this.raison_social.TabIndex = 66;
             // 
             // ICE
             // 
-            this.ICE.Location = new System.Drawing.Point(378, 64);
+            this.ICE.Location = new System.Drawing.Point(567, 99);
+            this.ICE.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ICE.Name = "ICE";
-            this.ICE.Size = new System.Drawing.Size(100, 20);
+            this.ICE.Size = new System.Drawing.Size(148, 27);
             this.ICE.TabIndex = 65;
             // 
             // FournisseurAjout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 483);
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ClientSize = new System.Drawing.Size(1191, 742);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button7);
@@ -247,6 +275,8 @@ namespace test_framework
             this.Controls.Add(this.tele_frs);
             this.Controls.Add(this.raison_social);
             this.Controls.Add(this.ICE);
+            this.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FournisseurAjout";
             this.Text = "FournisseurAjout";
             this.Load += new System.EventHandler(this.FournisseurAjout_Load);

@@ -16,14 +16,14 @@ namespace test_framework {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Commande : ReportClass {
+    public class CrystalReport1 : ReportClass {
         
-        public Commande() {
+        public CrystalReport1() {
         }
         
         public override string ResourceName {
             get {
-                return "Commande.rpt";
+                return "CrystalReport1.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace test_framework {
         
         public override string FullResourceName {
             get {
-                return "test_framework.Commande.rpt";
+                return "test_framework.CrystalReport1.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace test_framework {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCommande : Component, ICachedReport {
+    public class CachedCrystalReport1 : Component, ICachedReport {
         
-        public CachedCommande() {
+        public CachedCrystalReport1() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace test_framework {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Commande rpt = new Commande();
+            CrystalReport1 rpt = new CrystalReport1();
             rpt.Site = this.Site;
             return rpt;
         }

@@ -64,9 +64,10 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(58, 388);
+            this.button10.Location = new System.Drawing.Point(77, 478);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 40);
+            this.button10.Size = new System.Drawing.Size(100, 49);
             this.button10.TabIndex = 30;
             this.button10.Text = "Consulter BL";
             this.button10.UseVisualStyleBackColor = true;
@@ -78,9 +79,10 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(139, 388);
+            this.button5.Location = new System.Drawing.Point(185, 478);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 40);
+            this.button5.Size = new System.Drawing.Size(100, 49);
             this.button5.TabIndex = 28;
             this.button5.Text = "Consulter Factures";
             this.button5.UseVisualStyleBackColor = true;
@@ -100,11 +102,12 @@ namespace test_framework
             this.Column3,
             this.Column5,
             this.Column6});
-            this.dataGridClt.Location = new System.Drawing.Point(58, 93);
+            this.dataGridClt.Location = new System.Drawing.Point(77, 114);
+            this.dataGridClt.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridClt.Name = "dataGridClt";
             this.dataGridClt.ReadOnly = true;
             this.dataGridClt.RowHeadersWidth = 51;
-            this.dataGridClt.Size = new System.Drawing.Size(678, 289);
+            this.dataGridClt.Size = new System.Drawing.Size(904, 356);
             this.dataGridClt.TabIndex = 27;
             this.dataGridClt.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellClick);
             this.dataGridClt.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellDoubleClick);
@@ -114,6 +117,7 @@ namespace test_framework
             this.Column1.HeaderText = "code client";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Width = 125;
             // 
             // Column2
@@ -121,6 +125,7 @@ namespace test_framework
             this.Column2.HeaderText = "CIN ";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 125;
             // 
             // Column3
@@ -128,6 +133,7 @@ namespace test_framework
             this.Column3.HeaderText = "Raison Social";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Width = 125;
             // 
             // Column5
@@ -135,6 +141,7 @@ namespace test_framework
             this.Column5.HeaderText = "GSM";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Width = 125;
             // 
             // Column6
@@ -142,6 +149,7 @@ namespace test_framework
             this.Column6.HeaderText = "e-mail";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
             // 
             // searchBoxClt
@@ -149,9 +157,10 @@ namespace test_framework
             this.searchBoxClt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchBoxClt.Location = new System.Drawing.Point(555, 66);
+            this.searchBoxClt.Location = new System.Drawing.Point(740, 81);
+            this.searchBoxClt.Margin = new System.Windows.Forms.Padding(4);
             this.searchBoxClt.Name = "searchBoxClt";
-            this.searchBoxClt.Size = new System.Drawing.Size(100, 20);
+            this.searchBoxClt.Size = new System.Drawing.Size(132, 22);
             this.searchBoxClt.TabIndex = 26;
             this.searchBoxClt.TextChanged += new System.EventHandler(this.searchBoxClt_TextChanged);
             // 
@@ -161,9 +170,10 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(661, 64);
+            this.button7.Location = new System.Drawing.Point(881, 79);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(100, 28);
             this.button7.TabIndex = 25;
             this.button7.Text = "chercher";
             this.button7.UseVisualStyleBackColor = true;
@@ -175,9 +185,10 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(604, 388);
+            this.button8.Location = new System.Drawing.Point(805, 478);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(132, 40);
+            this.button8.Size = new System.Drawing.Size(176, 49);
             this.button8.TabIndex = 24;
             this.button8.Text = "afficher tout les clients";
             this.button8.UseVisualStyleBackColor = true;
@@ -186,9 +197,10 @@ namespace test_framework
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(16, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 33;
             this.button1.Text = "Fermer";
             this.button1.UseVisualStyleBackColor = true;
@@ -196,6 +208,7 @@ namespace test_framework
             // 
             // panelAdd
             // 
+            this.panelAdd.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panelAdd.Controls.Add(this.button12);
             this.panelAdd.Controls.Add(this.button4);
             this.panelAdd.Controls.Add(this.button3);
@@ -208,134 +221,142 @@ namespace test_framework
             this.panelAdd.Controls.Add(this.label5);
             this.panelAdd.Controls.Add(this.label3);
             this.panelAdd.Controls.Add(this.label2);
-            this.panelAdd.Location = new System.Drawing.Point(-3, -2);
+            this.panelAdd.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            this.panelAdd.Location = new System.Drawing.Point(-4, -2);
+            this.panelAdd.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdd.Name = "panelAdd";
-            this.panelAdd.Size = new System.Drawing.Size(799, 494);
+            this.panelAdd.Size = new System.Drawing.Size(1065, 608);
             this.panelAdd.TabIndex = 34;
             this.panelAdd.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAdd_Paint);
             // 
             // button12
             // 
+            this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(13, 14);
+            this.button12.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
+            this.button12.Location = new System.Drawing.Point(950, 555);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.Size = new System.Drawing.Size(100, 28);
             this.button12.TabIndex = 42;
-            this.button12.Text = "Fermer";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(298, 339);
+            this.button4.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button4.Location = new System.Drawing.Point(397, 417);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 28);
+            this.button4.Size = new System.Drawing.Size(100, 34);
             this.button4.TabIndex = 41;
             this.button4.Text = "Supprimer";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(379, 339);
+            this.button3.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button3.Location = new System.Drawing.Point(505, 417);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 28);
+            this.button3.Size = new System.Drawing.Size(95, 34);
             this.button3.TabIndex = 40;
             this.button3.Text = "Modifier";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button11
             // 
+            this.button11.BackColor = System.Drawing.Color.MidnightBlue;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(455, 339);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
+            this.button11.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button11.Location = new System.Drawing.Point(607, 417);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(70, 28);
+            this.button11.Size = new System.Drawing.Size(93, 34);
             this.button11.TabIndex = 38;
             this.button11.Text = "Ajouter";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // email_clt
             // 
-            this.email_clt.Location = new System.Drawing.Point(397, 260);
-            this.email_clt.Margin = new System.Windows.Forms.Padding(2);
+            this.email_clt.Location = new System.Drawing.Point(529, 320);
+            this.email_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email_clt.Name = "email_clt";
-            this.email_clt.Size = new System.Drawing.Size(92, 20);
+            this.email_clt.Size = new System.Drawing.Size(121, 27);
             this.email_clt.TabIndex = 37;
             // 
             // tele_clt
             // 
-            this.tele_clt.Location = new System.Drawing.Point(397, 218);
-            this.tele_clt.Margin = new System.Windows.Forms.Padding(2);
+            this.tele_clt.Location = new System.Drawing.Point(529, 268);
+            this.tele_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tele_clt.Name = "tele_clt";
-            this.tele_clt.Size = new System.Drawing.Size(92, 20);
+            this.tele_clt.Size = new System.Drawing.Size(121, 27);
             this.tele_clt.TabIndex = 36;
             // 
             // nom_clt
             // 
-            this.nom_clt.Location = new System.Drawing.Point(397, 173);
-            this.nom_clt.Margin = new System.Windows.Forms.Padding(2);
+            this.nom_clt.Location = new System.Drawing.Point(529, 213);
+            this.nom_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nom_clt.Name = "nom_clt";
-            this.nom_clt.Size = new System.Drawing.Size(92, 20);
+            this.nom_clt.Size = new System.Drawing.Size(121, 27);
             this.nom_clt.TabIndex = 35;
             // 
             // cin_clt
             // 
-            this.cin_clt.Location = new System.Drawing.Point(397, 127);
-            this.cin_clt.Margin = new System.Windows.Forms.Padding(2);
+            this.cin_clt.Location = new System.Drawing.Point(529, 156);
+            this.cin_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cin_clt.Name = "cin_clt";
-            this.cin_clt.Size = new System.Drawing.Size(92, 20);
+            this.cin_clt.Size = new System.Drawing.Size(121, 27);
             this.cin_clt.TabIndex = 34;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(308, 263);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(411, 324);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.Size = new System.Drawing.Size(47, 20);
             this.label6.TabIndex = 33;
             this.label6.Text = "Email";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(308, 221);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(411, 272);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(42, 20);
             this.label5.TabIndex = 32;
             this.label5.Text = "GSM";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 178);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(411, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(95, 20);
             this.label3.TabIndex = 31;
             this.label3.Text = "raison social";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(308, 131);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(411, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(39, 20);
             this.label2.TabIndex = 30;
             this.label2.Text = "CIN ";
             // 
             // ClientListe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 483);
+            this.ClientSize = new System.Drawing.Size(1059, 594);
             this.Controls.Add(this.panelAdd);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button10);
@@ -344,6 +365,7 @@ namespace test_framework
             this.Controls.Add(this.searchBoxClt);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientListe";
             this.Text = "ClientListe";
             this.Load += new System.EventHandler(this.ClientListe_Load);
