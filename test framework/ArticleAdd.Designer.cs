@@ -56,18 +56,18 @@ namespace test_framework
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +90,7 @@ namespace test_framework
             this.comboBox2.Location = new System.Drawing.Point(358, 63);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 28);
+            this.comboBox2.Size = new System.Drawing.Size(179, 23);
             this.comboBox2.TabIndex = 96;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -100,7 +100,7 @@ namespace test_framework
             this.label19.Location = new System.Drawing.Point(872, 149);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(102, 20);
+            this.label19.Size = new System.Drawing.Size(78, 15);
             this.label19.TabIndex = 95;
             this.label19.Text = "taux TVA (%)";
             // 
@@ -109,7 +109,7 @@ namespace test_framework
             this.textBox11.Location = new System.Drawing.Point(984, 144);
             this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 27);
+            this.textBox11.Size = new System.Drawing.Size(148, 23);
             this.textBox11.TabIndex = 94;
             // 
             // button11
@@ -146,7 +146,7 @@ namespace test_framework
             this.label18.Location = new System.Drawing.Point(377, 38);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(130, 20);
+            this.label18.Size = new System.Drawing.Size(101, 15);
             this.label18.TabIndex = 91;
             this.label18.Text = "Nom Fournisseur";
             // 
@@ -156,7 +156,7 @@ namespace test_framework
             this.label17.Location = new System.Drawing.Point(763, 67);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 20);
+            this.label17.Size = new System.Drawing.Size(32, 15);
             this.label17.TabIndex = 90;
             this.label17.Text = "date";
             // 
@@ -167,7 +167,7 @@ namespace test_framework
             this.dateTimePicker1.Location = new System.Drawing.Point(813, 63);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(297, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(297, 23);
             this.dateTimePicker1.TabIndex = 89;
             // 
             // label16
@@ -176,7 +176,7 @@ namespace test_framework
             this.label16.Location = new System.Drawing.Point(453, 109);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 20);
+            this.label16.Size = new System.Drawing.Size(71, 15);
             this.label16.TabIndex = 88;
             this.label16.Text = "designation";
             // 
@@ -186,7 +186,7 @@ namespace test_framework
             this.label15.Location = new System.Drawing.Point(624, 149);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 20);
+            this.label15.Size = new System.Drawing.Size(38, 15);
             this.label15.TabIndex = 87;
             this.label15.Text = "rayon";
             // 
@@ -196,7 +196,7 @@ namespace test_framework
             this.label14.Location = new System.Drawing.Point(331, 149);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(103, 20);
+            this.label14.Size = new System.Drawing.Size(84, 15);
             this.label14.TabIndex = 86;
             this.label14.Text = "prix vente HT";
             // 
@@ -206,7 +206,7 @@ namespace test_framework
             this.label13.Location = new System.Drawing.Point(736, 109);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 20);
+            this.label13.Size = new System.Drawing.Size(67, 15);
             this.label13.TabIndex = 85;
             this.label13.Text = "qte achete";
             // 
@@ -216,7 +216,7 @@ namespace test_framework
             this.label12.Location = new System.Drawing.Point(48, 149);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(102, 20);
+            this.label12.Size = new System.Drawing.Size(81, 15);
             this.label12.TabIndex = 84;
             this.label12.Text = "prix achat HT";
             // 
@@ -226,7 +226,7 @@ namespace test_framework
             this.label11.Location = new System.Drawing.Point(187, 109);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 20);
+            this.label11.Size = new System.Drawing.Size(62, 15);
             this.label11.TabIndex = 83;
             this.label11.Text = "ref article";
             // 
@@ -235,7 +235,7 @@ namespace test_framework
             this.textBox9.Location = new System.Drawing.Point(553, 104);
             this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 27);
+            this.textBox9.Size = new System.Drawing.Size(148, 23);
             this.textBox9.TabIndex = 81;
             // 
             // textBox7
@@ -243,7 +243,7 @@ namespace test_framework
             this.textBox7.Location = new System.Drawing.Point(445, 144);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 27);
+            this.textBox7.Size = new System.Drawing.Size(148, 23);
             this.textBox7.TabIndex = 79;
             // 
             // textBox6
@@ -251,7 +251,7 @@ namespace test_framework
             this.textBox6.Location = new System.Drawing.Point(830, 104);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 27);
+            this.textBox6.Size = new System.Drawing.Size(148, 23);
             this.textBox6.TabIndex = 78;
             // 
             // textBox5
@@ -259,7 +259,7 @@ namespace test_framework
             this.textBox5.Location = new System.Drawing.Point(164, 144);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 27);
+            this.textBox5.Size = new System.Drawing.Size(148, 23);
             this.textBox5.TabIndex = 77;
             // 
             // textBox4
@@ -267,7 +267,7 @@ namespace test_framework
             this.textBox4.Location = new System.Drawing.Point(272, 104);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 27);
+            this.textBox4.Size = new System.Drawing.Size(148, 23);
             this.textBox4.TabIndex = 76;
             // 
             // dataGridView1
@@ -287,7 +287,7 @@ namespace test_framework
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightBlue;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -320,75 +320,6 @@ namespace test_framework
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Size = new System.Drawing.Size(803, 335);
             this.dataGridView1.TabIndex = 99;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(556, 63);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 27);
-            this.textBox2.TabIndex = 100;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button2.Location = new System.Drawing.Point(159, 214);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 46);
-            this.button2.TabIndex = 101;
-            this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button3.Location = new System.Drawing.Point(519, 214);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 46);
-            this.button3.TabIndex = 102;
-            this.button3.Text = "Supprimer";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button4.Location = new System.Drawing.Point(841, 214);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 46);
-            this.button4.TabIndex = 103;
-            this.button4.Text = "Vider";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(571, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 20);
-            this.label1.TabIndex = 104;
-            this.label1.Text = "ID Fournisseur";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(682, 144);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(179, 28);
-            this.comboBox1.TabIndex = 105;
             // 
             // Column1
             // 
@@ -449,9 +380,78 @@ namespace test_framework
             this.Column6.ReadOnly = true;
             this.Column6.Width = 125;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(556, 63);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(148, 23);
+            this.textBox2.TabIndex = 100;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button2.Location = new System.Drawing.Point(159, 214);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(167, 46);
+            this.button2.TabIndex = 101;
+            this.button2.Text = "Ajouter";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button3.Location = new System.Drawing.Point(519, 214);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(167, 46);
+            this.button3.TabIndex = 102;
+            this.button3.Text = "Supprimer";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.SkyBlue;
+            this.button4.Location = new System.Drawing.Point(841, 214);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(167, 46);
+            this.button4.TabIndex = 103;
+            this.button4.Text = "Vider";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(571, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 15);
+            this.label1.TabIndex = 104;
+            this.label1.Text = "ID Fournisseur";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(682, 144);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(179, 23);
+            this.comboBox1.TabIndex = 105;
+            // 
             // ArticleAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1192, 743);

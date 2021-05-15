@@ -67,7 +67,6 @@ namespace test_framework
             }
             ado.dr.Close();
 
-            pictureBox1.Visible = false;
         }
 
         private int lastFact = 0;
@@ -114,7 +113,6 @@ namespace test_framework
                 qr.Options = options;
                 qr.Format = ZXing.BarcodeFormat.QR_CODE;
                 var result = new Bitmap(qr.Write(dataGridView1.Rows[i].Cells[0].Value.ToString().Trim()));
-                pictureBox1.Image = result;
                 var res2 = imageToByteArray(result);
                 var img2str = Convert.ToBase64String(res2);
 
