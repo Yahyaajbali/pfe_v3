@@ -29,12 +29,12 @@ namespace test_framework
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -76,10 +76,10 @@ namespace test_framework
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
-            this.button1.Location = new System.Drawing.Point(1078, 704);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(947, 577);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -87,29 +87,29 @@ namespace test_framework
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(358, 63);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox2.Location = new System.Drawing.Point(280, 45);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(179, 23);
+            this.comboBox2.Size = new System.Drawing.Size(160, 25);
             this.comboBox2.TabIndex = 96;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(872, 149);
+            this.label19.Location = new System.Drawing.Point(737, 118);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 15);
+            this.label19.Size = new System.Drawing.Size(94, 19);
             this.label19.TabIndex = 95;
             this.label19.Text = "taux TVA (%)";
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(984, 144);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox11.Location = new System.Drawing.Point(836, 114);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 23);
+            this.textBox11.Size = new System.Drawing.Size(132, 25);
             this.textBox11.TabIndex = 94;
             // 
             // button11
@@ -117,10 +117,10 @@ namespace test_framework
             this.button11.BackColor = System.Drawing.Color.MidnightBlue;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button11.Location = new System.Drawing.Point(659, 640);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button11.Location = new System.Drawing.Point(548, 536);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(165, 65);
+            this.button11.Size = new System.Drawing.Size(147, 55);
             this.button11.TabIndex = 93;
             this.button11.Text = "Ajouter ligne";
             this.button11.UseVisualStyleBackColor = false;
@@ -131,10 +131,10 @@ namespace test_framework
             this.button12.BackColor = System.Drawing.Color.MidnightBlue;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button12.Location = new System.Drawing.Point(364, 640);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button12.Location = new System.Drawing.Point(285, 536);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(186, 65);
+            this.button12.Size = new System.Drawing.Size(165, 55);
             this.button12.TabIndex = 92;
             this.button12.Text = "Enregistrer nouveau";
             this.button12.UseVisualStyleBackColor = false;
@@ -143,20 +143,20 @@ namespace test_framework
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(377, 38);
+            this.label18.Location = new System.Drawing.Point(297, 24);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(101, 15);
+            this.label18.Size = new System.Drawing.Size(122, 19);
             this.label18.TabIndex = 91;
             this.label18.Text = "Nom Fournisseur";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(763, 67);
+            this.label17.Location = new System.Drawing.Point(640, 48);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 15);
+            this.label17.Size = new System.Drawing.Size(39, 19);
             this.label17.TabIndex = 90;
             this.label17.Text = "date";
             // 
@@ -164,110 +164,110 @@ namespace test_framework
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(813, 63);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(684, 45);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(297, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(264, 25);
             this.dateTimePicker1.TabIndex = 89;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(453, 109);
+            this.label16.Location = new System.Drawing.Point(364, 84);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 15);
+            this.label16.Size = new System.Drawing.Size(87, 19);
             this.label16.TabIndex = 88;
             this.label16.Text = "designation";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(624, 149);
+            this.label15.Location = new System.Drawing.Point(516, 118);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(38, 15);
+            this.label15.Size = new System.Drawing.Size(48, 19);
             this.label15.TabIndex = 87;
             this.label15.Text = "rayon";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(331, 149);
+            this.label14.Location = new System.Drawing.Point(256, 118);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 15);
+            this.label14.Size = new System.Drawing.Size(100, 19);
             this.label14.TabIndex = 86;
             this.label14.Text = "prix vente HT";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(736, 109);
+            this.label13.Location = new System.Drawing.Point(616, 84);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 15);
+            this.label13.Size = new System.Drawing.Size(79, 19);
             this.label13.TabIndex = 85;
             this.label13.Text = "qte achete";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(48, 149);
+            this.label12.Location = new System.Drawing.Point(4, 118);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 15);
+            this.label12.Size = new System.Drawing.Size(99, 19);
             this.label12.TabIndex = 84;
             this.label12.Text = "prix achat HT";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(187, 109);
+            this.label11.Location = new System.Drawing.Point(128, 84);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 15);
+            this.label11.Size = new System.Drawing.Size(74, 19);
             this.label11.TabIndex = 83;
             this.label11.Text = "ref article";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(553, 104);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox9.Location = new System.Drawing.Point(453, 80);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 23);
+            this.textBox9.Size = new System.Drawing.Size(132, 25);
             this.textBox9.TabIndex = 81;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(445, 144);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox7.Location = new System.Drawing.Point(357, 114);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 23);
+            this.textBox7.Size = new System.Drawing.Size(132, 25);
             this.textBox7.TabIndex = 79;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(830, 104);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox6.Location = new System.Drawing.Point(700, 80);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 23);
+            this.textBox6.Size = new System.Drawing.Size(132, 25);
             this.textBox6.TabIndex = 78;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(164, 144);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox5.Location = new System.Drawing.Point(108, 114);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(148, 23);
+            this.textBox5.Size = new System.Drawing.Size(132, 25);
             this.textBox5.TabIndex = 77;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(272, 104);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox4.Location = new System.Drawing.Point(204, 80);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 23);
+            this.textBox4.Size = new System.Drawing.Size(132, 25);
             this.textBox4.TabIndex = 76;
             // 
             // dataGridView1
@@ -275,9 +275,9 @@ namespace test_framework
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SkyBlue;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.SkyBlue;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -285,14 +285,14 @@ namespace test_framework
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -302,32 +302,32 @@ namespace test_framework
             this.Column5,
             this.Column6});
             this.dataGridView1.GridColor = System.Drawing.Color.MidnightBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(191, 295);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 243);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SkyBlue;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.SkyBlue;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SkyBlue;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 335);
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.SkyBlue;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridView1.Size = new System.Drawing.Size(802, 285);
             this.dataGridView1.TabIndex = 99;
             // 
             // Column1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SkyBlue;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.SkyBlue;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column1.HeaderText = "Ref Article";
             this.Column1.MinimumWidth = 6;
@@ -339,9 +339,9 @@ namespace test_framework
             // 
             // Column2
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SkyBlue;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SkyBlue;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column2.HeaderText = "Designation";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
@@ -382,10 +382,10 @@ namespace test_framework
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(556, 63);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(456, 45);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 23);
+            this.textBox2.Size = new System.Drawing.Size(132, 25);
             this.textBox2.TabIndex = 100;
             // 
             // button2
@@ -393,10 +393,10 @@ namespace test_framework
             this.button2.BackColor = System.Drawing.Color.MidnightBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button2.Location = new System.Drawing.Point(159, 214);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(103, 173);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 46);
+            this.button2.Size = new System.Drawing.Size(148, 39);
             this.button2.TabIndex = 101;
             this.button2.Text = "Ajouter";
             this.button2.UseVisualStyleBackColor = false;
@@ -407,10 +407,10 @@ namespace test_framework
             this.button3.BackColor = System.Drawing.Color.MidnightBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button3.Location = new System.Drawing.Point(519, 214);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(423, 173);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 46);
+            this.button3.Size = new System.Drawing.Size(148, 39);
             this.button3.TabIndex = 102;
             this.button3.Text = "Supprimer";
             this.button3.UseVisualStyleBackColor = false;
@@ -421,10 +421,10 @@ namespace test_framework
             this.button4.BackColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button4.Location = new System.Drawing.Point(841, 214);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(709, 173);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 46);
+            this.button4.Size = new System.Drawing.Size(148, 39);
             this.button4.TabIndex = 103;
             this.button4.Text = "Vider";
             this.button4.UseVisualStyleBackColor = false;
@@ -433,28 +433,28 @@ namespace test_framework
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(571, 38);
+            this.label1.Location = new System.Drawing.Point(469, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 15);
+            this.label1.Size = new System.Drawing.Size(103, 19);
             this.label1.TabIndex = 104;
             this.label1.Text = "ID Fournisseur";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(682, 144);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(568, 114);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(179, 23);
+            this.comboBox1.Size = new System.Drawing.Size(160, 25);
             this.comboBox1.TabIndex = 105;
             // 
             // ArticleAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1192, 743);
+            this.ClientSize = new System.Drawing.Size(1060, 632);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -482,8 +482,8 @@ namespace test_framework
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button1);
-            this.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ArticleAdd";
             this.Text = "ArticleAdd";
             this.Load += new System.EventHandler(this.ArticleAdd_Load);

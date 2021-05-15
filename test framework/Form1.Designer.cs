@@ -70,8 +70,9 @@ namespace test_framework
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 743);
+            this.panel1.Size = new System.Drawing.Size(267, 566);
             this.panel1.TabIndex = 0;
             // 
             // panel3
@@ -86,22 +87,25 @@ namespace test_framework
             this.panel3.Controls.Add(this.panelArticle);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 119);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(0, 145);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 621);
+            this.panel3.Size = new System.Drawing.Size(267, 764);
             this.panel3.TabIndex = 2;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
             this.button13.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.Location = new System.Drawing.Point(0, 408);
+            this.button13.Location = new System.Drawing.Point(0, 379);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(200, 213);
+            this.button13.Size = new System.Drawing.Size(267, 42);
             this.button13.TabIndex = 11;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
@@ -115,10 +119,11 @@ namespace test_framework
             this.button5.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.SkyBlue;
             this.button5.Image = global::test_framework.Properties.Resources.icons8_create_order_26;
-            this.button5.Location = new System.Drawing.Point(0, 276);
+            this.button5.Location = new System.Drawing.Point(0, 339);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(200, 32);
+            this.button5.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button5.Size = new System.Drawing.Size(267, 40);
             this.button5.TabIndex = 10;
             this.button5.Text = "Commandes";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,9 +137,10 @@ namespace test_framework
             this.panelFournisseur.Controls.Add(this.button4);
             this.panelFournisseur.Controls.Add(this.button11);
             this.panelFournisseur.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelFournisseur.Location = new System.Drawing.Point(0, 206);
+            this.panelFournisseur.Location = new System.Drawing.Point(0, 252);
+            this.panelFournisseur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelFournisseur.Name = "panelFournisseur";
-            this.panelFournisseur.Size = new System.Drawing.Size(200, 70);
+            this.panelFournisseur.Size = new System.Drawing.Size(267, 87);
             this.panelFournisseur.TabIndex = 9;
             // 
             // button8
@@ -144,9 +150,10 @@ namespace test_framework
             this.button8.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(0, 46);
+            this.button8.Location = new System.Drawing.Point(0, 56);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 24);
+            this.button8.Size = new System.Drawing.Size(267, 30);
             this.button8.TabIndex = 2;
             this.button8.Text = "Factures";
             this.button8.UseVisualStyleBackColor = false;
@@ -159,9 +166,10 @@ namespace test_framework
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(0, 23);
+            this.button4.Location = new System.Drawing.Point(0, 28);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 23);
+            this.button4.Size = new System.Drawing.Size(267, 28);
             this.button4.TabIndex = 2;
             this.button4.Text = "Ajouter Fournisseur";
             this.button4.UseVisualStyleBackColor = false;
@@ -175,8 +183,9 @@ namespace test_framework
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Location = new System.Drawing.Point(0, 0);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(200, 23);
+            this.button11.Size = new System.Drawing.Size(267, 28);
             this.button11.TabIndex = 1;
             this.button11.Text = "Liste";
             this.button11.UseVisualStyleBackColor = false;
@@ -191,10 +200,11 @@ namespace test_framework
             this.button12.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.SkyBlue;
             this.button12.Image = global::test_framework.Properties.Resources.icons8_supplier_26;
-            this.button12.Location = new System.Drawing.Point(0, 173);
+            this.button12.Location = new System.Drawing.Point(0, 212);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(200, 33);
+            this.button12.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button12.Size = new System.Drawing.Size(267, 40);
             this.button12.TabIndex = 8;
             this.button12.Text = "Fournisseur";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -207,9 +217,10 @@ namespace test_framework
             this.panelClient.Controls.Add(this.button10);
             this.panelClient.Controls.Add(this.button9);
             this.panelClient.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClient.Location = new System.Drawing.Point(0, 124);
+            this.panelClient.Location = new System.Drawing.Point(0, 152);
+            this.panelClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelClient.Name = "panelClient";
-            this.panelClient.Size = new System.Drawing.Size(200, 49);
+            this.panelClient.Size = new System.Drawing.Size(267, 60);
             this.panelClient.TabIndex = 7;
             // 
             // button10
@@ -219,9 +230,10 @@ namespace test_framework
             this.button10.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(0, 23);
+            this.button10.Location = new System.Drawing.Point(0, 28);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(200, 26);
+            this.button10.Size = new System.Drawing.Size(267, 32);
             this.button10.TabIndex = 2;
             this.button10.Text = "Ajouter";
             this.button10.UseVisualStyleBackColor = false;
@@ -235,8 +247,9 @@ namespace test_framework
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(0, 0);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 23);
+            this.button9.Size = new System.Drawing.Size(267, 28);
             this.button9.TabIndex = 1;
             this.button9.Text = "Liste";
             this.button9.UseVisualStyleBackColor = false;
@@ -251,10 +264,11 @@ namespace test_framework
             this.button3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.SkyBlue;
             this.button3.Image = global::test_framework.Properties.Resources.icons8_search_client_26;
-            this.button3.Location = new System.Drawing.Point(0, 85);
+            this.button3.Location = new System.Drawing.Point(0, 104);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(200, 39);
+            this.button3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(267, 48);
             this.button3.TabIndex = 2;
             this.button3.Text = "Client";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,9 +282,10 @@ namespace test_framework
             this.panelArticle.Controls.Add(this.button7);
             this.panelArticle.Controls.Add(this.button6);
             this.panelArticle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelArticle.Location = new System.Drawing.Point(0, 39);
+            this.panelArticle.Location = new System.Drawing.Point(0, 48);
+            this.panelArticle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelArticle.Name = "panelArticle";
-            this.panelArticle.Size = new System.Drawing.Size(200, 46);
+            this.panelArticle.Size = new System.Drawing.Size(267, 56);
             this.panelArticle.TabIndex = 1;
             // 
             // button7
@@ -280,9 +295,10 @@ namespace test_framework
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.MidnightBlue;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(0, 23);
+            this.button7.Location = new System.Drawing.Point(0, 28);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 23);
+            this.button7.Size = new System.Drawing.Size(267, 28);
             this.button7.TabIndex = 1;
             this.button7.Text = "Stock";
             this.button7.UseVisualStyleBackColor = false;
@@ -296,8 +312,9 @@ namespace test_framework
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 23);
+            this.button6.Size = new System.Drawing.Size(267, 28);
             this.button6.TabIndex = 0;
             this.button6.Text = "Rechercher";
             this.button6.UseVisualStyleBackColor = false;
@@ -313,9 +330,10 @@ namespace test_framework
             this.button2.ForeColor = System.Drawing.Color.SkyBlue;
             this.button2.Image = global::test_framework.Properties.Resources.icons8_add_shopping_cart_26;
             this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(200, 39);
+            this.button2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(267, 48);
             this.button2.TabIndex = 0;
             this.button2.Text = "Article";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -336,10 +354,11 @@ namespace test_framework
             this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.SkyBlue;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_home_26;
-            this.button1.Location = new System.Drawing.Point(0, 85);
+            this.button1.Location = new System.Drawing.Point(0, 104);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(200, 34);
+            this.button1.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(267, 41);
             this.button1.TabIndex = 1;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = false;
@@ -350,8 +369,9 @@ namespace test_framework
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 85);
+            this.panel2.Size = new System.Drawing.Size(267, 104);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox1
@@ -359,8 +379,9 @@ namespace test_framework
             this.pictureBox1.BackColor = System.Drawing.Color.MidnightBlue;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 85);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 104);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -369,32 +390,37 @@ namespace test_framework
             // 
             this.panelChild.Controls.Add(this.pictureBox2);
             this.panelChild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChild.Location = new System.Drawing.Point(200, 0);
+            this.panelChild.Location = new System.Drawing.Point(267, 0);
+            this.panelChild.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelChild.Name = "panelChild";
-            this.panelChild.Size = new System.Drawing.Size(1186, 743);
+            this.panelChild.Size = new System.Drawing.Size(1045, 566);
             this.panelChild.TabIndex = 1;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::test_framework.Properties.Resources.logov2_transparent;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1186, 743);
+            this.pictureBox2.Size = new System.Drawing.Size(1045, 566);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1386, 743);
+            this.ClientSize = new System.Drawing.Size(1312, 566);
             this.Controls.Add(this.panelChild);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -431,11 +457,11 @@ namespace test_framework
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

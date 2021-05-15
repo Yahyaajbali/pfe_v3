@@ -48,10 +48,10 @@ namespace test_framework
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
-            this.button12.Location = new System.Drawing.Point(1066, 704);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button12.Location = new System.Drawing.Point(967, 610);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(112, 35);
+            this.button12.Size = new System.Drawing.Size(100, 30);
             this.button12.TabIndex = 54;
             this.button12.UseVisualStyleBackColor = true;
             // 
@@ -60,10 +60,10 @@ namespace test_framework
             this.button4.BackColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button4.Location = new System.Drawing.Point(438, 521);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(389, 443);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 42);
+            this.button4.Size = new System.Drawing.Size(100, 36);
             this.button4.TabIndex = 53;
             this.button4.Text = "Supprimer";
             this.button4.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@ namespace test_framework
             this.button3.BackColor = System.Drawing.Color.MidnightBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button3.Location = new System.Drawing.Point(559, 521);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(497, 443);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 42);
+            this.button3.Size = new System.Drawing.Size(95, 36);
             this.button3.TabIndex = 52;
             this.button3.Text = "Modifier";
             this.button3.UseVisualStyleBackColor = false;
@@ -86,10 +86,10 @@ namespace test_framework
             this.button11.BackColor = System.Drawing.Color.MidnightBlue;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button11.Location = new System.Drawing.Point(674, 521);
+            this.button11.Location = new System.Drawing.Point(599, 443);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(105, 42);
+            this.button11.Size = new System.Drawing.Size(93, 36);
             this.button11.TabIndex = 51;
             this.button11.Text = "Ajouter";
             this.button11.UseVisualStyleBackColor = false;
@@ -97,78 +97,78 @@ namespace test_framework
             // 
             // email_clt
             // 
-            this.email_clt.Location = new System.Drawing.Point(586, 400);
+            this.email_clt.Location = new System.Drawing.Point(521, 340);
             this.email_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email_clt.Name = "email_clt";
-            this.email_clt.Size = new System.Drawing.Size(136, 27);
+            this.email_clt.Size = new System.Drawing.Size(121, 25);
             this.email_clt.TabIndex = 50;
             // 
             // tele_clt
             // 
-            this.tele_clt.Location = new System.Drawing.Point(586, 335);
+            this.tele_clt.Location = new System.Drawing.Point(521, 285);
             this.tele_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tele_clt.Name = "tele_clt";
-            this.tele_clt.Size = new System.Drawing.Size(136, 27);
+            this.tele_clt.Size = new System.Drawing.Size(121, 25);
             this.tele_clt.TabIndex = 49;
             // 
             // nom_clt
             // 
-            this.nom_clt.Location = new System.Drawing.Point(586, 266);
+            this.nom_clt.Location = new System.Drawing.Point(521, 226);
             this.nom_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nom_clt.Name = "nom_clt";
-            this.nom_clt.Size = new System.Drawing.Size(136, 27);
+            this.nom_clt.Size = new System.Drawing.Size(121, 25);
             this.nom_clt.TabIndex = 48;
             // 
             // cin_clt
             // 
-            this.cin_clt.Location = new System.Drawing.Point(586, 195);
+            this.cin_clt.Location = new System.Drawing.Point(521, 166);
             this.cin_clt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cin_clt.Name = "cin_clt";
-            this.cin_clt.Size = new System.Drawing.Size(136, 27);
+            this.cin_clt.Size = new System.Drawing.Size(121, 25);
             this.cin_clt.TabIndex = 47;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(453, 405);
+            this.label6.Location = new System.Drawing.Point(403, 344);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 20);
+            this.label6.Size = new System.Drawing.Size(45, 19);
             this.label6.TabIndex = 46;
             this.label6.Text = "Email";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(453, 340);
+            this.label5.Location = new System.Drawing.Point(403, 289);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.Size = new System.Drawing.Size(40, 19);
             this.label5.TabIndex = 45;
             this.label5.Text = "GSM";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(453, 274);
+            this.label3.Location = new System.Drawing.Point(403, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 20);
+            this.label3.Size = new System.Drawing.Size(92, 19);
             this.label3.TabIndex = 44;
             this.label3.Text = "raison social";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(453, 201);
+            this.label2.Location = new System.Drawing.Point(403, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 20);
+            this.label2.Size = new System.Drawing.Size(37, 19);
             this.label2.TabIndex = 43;
             this.label2.Text = "CIN ";
             // 
             // ClientAjout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1191, 742);
+            this.ClientSize = new System.Drawing.Size(1078, 652);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -181,8 +181,8 @@ namespace test_framework
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClientAjout";
             this.Text = "ClientAjout";
             this.Load += new System.EventHandler(this.ClientAjout_Load);

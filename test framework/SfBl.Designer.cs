@@ -41,7 +41,7 @@ namespace test_framework
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
-            this.button12.Location = new System.Drawing.Point(1087, 654);
+            this.button12.Location = new System.Drawing.Point(1085, 643);
             this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(112, 35);

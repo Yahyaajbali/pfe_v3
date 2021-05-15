@@ -51,10 +51,10 @@ namespace test_framework
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
-            this.button1.Location = new System.Drawing.Point(1064, 691);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(948, 580);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -67,10 +67,10 @@ namespace test_framework
             this.button6.BackColor = System.Drawing.Color.MidnightBlue;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button6.Location = new System.Drawing.Point(972, 69);
+            this.button6.Location = new System.Drawing.Point(864, 59);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 55);
+            this.button6.Size = new System.Drawing.Size(108, 47);
             this.button6.TabIndex = 12;
             this.button6.Text = "Rechercher";
             this.button6.UseVisualStyleBackColor = false;
@@ -84,10 +84,10 @@ namespace test_framework
             this.button4.BackColor = System.Drawing.Color.MidnightBlue;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.SkyBlue;
-            this.button4.Location = new System.Drawing.Point(883, 594);
+            this.button4.Location = new System.Drawing.Point(785, 505);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(210, 55);
+            this.button4.Size = new System.Drawing.Size(187, 47);
             this.button4.TabIndex = 10;
             this.button4.Text = "Afficher tous les articles";
             this.button4.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@ namespace test_framework
             this.searchBoxArt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchBoxArt.Location = new System.Drawing.Point(748, 82);
+            this.searchBoxArt.Location = new System.Drawing.Point(665, 70);
             this.searchBoxArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBoxArt.Name = "searchBoxArt";
-            this.searchBoxArt.Size = new System.Drawing.Size(216, 23);
+            this.searchBoxArt.Size = new System.Drawing.Size(192, 25);
             this.searchBoxArt.TabIndex = 9;
             // 
             // label7
@@ -110,9 +110,9 @@ namespace test_framework
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(611, 88);
+            this.label7.Location = new System.Drawing.Point(543, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 15);
+            this.label7.Size = new System.Drawing.Size(122, 19);
             this.label7.TabIndex = 8;
             this.label7.Text = "Reference article";
             // 
@@ -129,7 +129,7 @@ namespace test_framework
             this.dataGridArt.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SkyBlue;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -143,13 +143,13 @@ namespace test_framework
             this.Column10,
             this.Column11,
             this.Column1});
-            this.dataGridArt.Location = new System.Drawing.Point(76, 131);
+            this.dataGridArt.Location = new System.Drawing.Point(68, 111);
             this.dataGridArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridArt.Name = "dataGridArt";
             this.dataGridArt.ReadOnly = true;
             this.dataGridArt.RowHeadersWidth = 51;
             this.dataGridArt.RowTemplate.Height = 100;
-            this.dataGridArt.Size = new System.Drawing.Size(1017, 458);
+            this.dataGridArt.Size = new System.Drawing.Size(904, 389);
             this.dataGridArt.TabIndex = 7;
             // 
             // Column7
@@ -203,21 +203,22 @@ namespace test_framework
             this.Column1.ReadOnly = true;
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column1.Width = 125;
             // 
             // ArticleCatalogue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(1191, 742);
+            this.ClientSize = new System.Drawing.Size(1059, 631);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.searchBoxArt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridArt);
             this.Controls.Add(this.button1);
-            this.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ArticleCatalogue";
             this.Text = "ArticleCatalogue";
             this.Load += new System.EventHandler(this.ArticleCatalogue_Load);
