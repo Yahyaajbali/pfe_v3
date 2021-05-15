@@ -42,7 +42,7 @@ namespace test_framework
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridArt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +101,7 @@ namespace test_framework
             this.searchBoxArt.Location = new System.Drawing.Point(748, 82);
             this.searchBoxArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBoxArt.Name = "searchBoxArt";
-            this.searchBoxArt.Size = new System.Drawing.Size(216, 27);
+            this.searchBoxArt.Size = new System.Drawing.Size(216, 23);
             this.searchBoxArt.TabIndex = 9;
             // 
             // label7
@@ -112,7 +112,7 @@ namespace test_framework
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(611, 88);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 20);
+            this.label7.Size = new System.Drawing.Size(104, 15);
             this.label7.TabIndex = 8;
             this.label7.Text = "Reference article";
             // 
@@ -148,7 +148,7 @@ namespace test_framework
             this.dataGridArt.Name = "dataGridArt";
             this.dataGridArt.ReadOnly = true;
             this.dataGridArt.RowHeadersWidth = 51;
-            this.dataGridArt.RowTemplate.Height = 24;
+            this.dataGridArt.RowTemplate.Height = 100;
             this.dataGridArt.Size = new System.Drawing.Size(1017, 458);
             this.dataGridArt.TabIndex = 7;
             // 
@@ -166,7 +166,7 @@ namespace test_framework
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 125;
+            this.Column8.Width = 320;
             // 
             // Column9
             // 
@@ -201,11 +201,12 @@ namespace test_framework
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // ArticleCatalogue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1191, 742);
@@ -239,6 +240,6 @@ namespace test_framework
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
     }
 }

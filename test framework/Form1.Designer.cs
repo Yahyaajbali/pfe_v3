@@ -99,9 +99,9 @@ namespace test_framework
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
             this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button13.Location = new System.Drawing.Point(0, 572);
+            this.button13.Location = new System.Drawing.Point(0, 408);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(200, 49);
+            this.button13.Size = new System.Drawing.Size(200, 213);
             this.button13.TabIndex = 11;
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
