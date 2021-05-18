@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace test_framework
 {
     public partial class SfBl : Form
     {
-        connection ado = new connection();
+        private connection ado = new connection();
+
         public SfBl()
         {
             InitializeComponent();
@@ -35,8 +29,16 @@ namespace test_framework
             dataGridView1.Columns[6].Name = "Numero de commande";
             dataGridView1.Columns[7].Name = "Raison Social";
 
+            dataGridView1.Columns[0].Width = 136;
+            dataGridView1.Columns[1].Width = 136;
+            dataGridView1.Columns[2].Width = 136;
+            dataGridView1.Columns[3].Width = 136; 
+            dataGridView1.Columns[5].Width = 136; dataGridView1.Columns[7].Width = 136;
+            dataGridView1.Columns[4].Width = 136; dataGridView1.Columns[6].Width = 136;
+            
             while (ado.dr.Read())
             {
+                label1.Text = "Bon de Livraison du client : "+ado.dr["raisonsocial"]+" .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["date_liv"], ado.dr["total_pht_bl"], ado.dr["taux_tva_bl"], ado.dr["montant_tva_bl"], ado.dr["total_ttc_bl"], ado.dr["idf_cmnd"], ado.dr["raisonsocial"]);
             }
             ado.dr.Close();
@@ -57,6 +59,7 @@ namespace test_framework
 
             while (ado.dr.Read())
             {
+                label1.Text = "Details du Bon de Livraison Numero : "+ado.dr["idf_bl"]+" .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["ref_art"], ado.dr["design_art"], ado.dr["qte_liv"], ado.dr["prix_liv"]);
             }
             ado.dr.Close();
@@ -80,6 +83,7 @@ namespace test_framework
 
             while (ado.dr.Read())
             {
+                label1.Text = "Bon de Livraison du client : " + ado.dr["raisonsocial"] + " .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["date_liv"], ado.dr["total_pht_bl"], ado.dr["taux_tva_bl"], ado.dr["montant_tva_bl"], ado.dr["total_ttc_bl"], ado.dr["idf_cmnd"], ado.dr["raisonsocial"]);
             }
             ado.dr.Close();
@@ -89,6 +93,7 @@ namespace test_framework
         {
             this.Close();
         }
+
         private int idf_bl = 0;
 
         private void button2_Click(object sender, EventArgs e)
@@ -109,12 +114,10 @@ namespace test_framework
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             idf_bl = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
     }
 }

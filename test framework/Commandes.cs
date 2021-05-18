@@ -20,7 +20,7 @@ namespace test_framework
         private void button4_Click(object sender, EventArgs e)
         {
             int qtestock = 0;
-            ado.cmd.CommandText = "select qte_stock from Article where ref_art = " + int.Parse(comboBox2.Text);
+            ado.cmd.CommandText = "select qte_stock from Article where ref_art = " + int.Parse(textBox5.Text);
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
@@ -30,7 +30,7 @@ namespace test_framework
             ado.dr.Close();
             if (qtestock >= int.Parse(textBox7.Text))
             {
-                dataGridView1.Rows.Add(comboBox2.Text, textBox5.Text, textBox7.Text, textBox8.Text, (float.Parse(textBox7.Text) * float.Parse(textBox8.Text)));
+                dataGridView1.Rows.Add( textBox5.Text,comboBox2.Text, textBox7.Text, textBox8.Text, (float.Parse(textBox7.Text) * float.Parse(textBox8.Text)));
             }
             else
             {
@@ -52,12 +52,12 @@ namespace test_framework
             }
             ado.dr.Close();
 
-            ado.cmd.CommandText = "select ref_art from article";
+            ado.cmd.CommandText = "select design_art from article";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
-                comboBox2.Items.Add(ado.dr["ref_art"]);
+                comboBox2.Items.Add(ado.dr["design_art"]);
             }
             ado.dr.Close();
         }
@@ -72,12 +72,12 @@ namespace test_framework
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ado.cmd.CommandText = "select design_art, qte_stock, prix_ht_stock from Article where ref_art = " + int.Parse(comboBox2.Text);
+            ado.cmd.CommandText = "select ref_art, qte_stock, prix_ht_stock from Article where design_art = '" + comboBox2.Text+"'";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
-                textBox5.Text = ado.dr["design_art"].ToString();
+                textBox5.Text = ado.dr["ref_art"].ToString();
                 textBox6.Text = ado.dr["qte_stock"].ToString();
                 textBox8.Text = ado.dr["prix_ht_stock"].ToString();
             }
@@ -188,8 +188,8 @@ namespace test_framework
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            comboBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            comboBox2.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            textBox5.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
             textBox7.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBox8.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             ado.cmd.CommandText = "select qte_stock from Article";

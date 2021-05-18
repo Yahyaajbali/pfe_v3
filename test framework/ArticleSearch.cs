@@ -32,7 +32,7 @@ namespace test_framework
                 MessageBox.Show("search box is empty");
                 return;
             }
-            ado.cmd.CommandText = "select * from article where ref_art =" + int.Parse(searchBox.Text);
+            ado.cmd.CommandText = "select * from article where design_art ='" + searchBox.Text+"'";
             ado.cmd.Connection = ado.cn;
             byte[] strQr;
             ado.dr = ado.cmd.ExecuteReader();
@@ -56,10 +56,27 @@ namespace test_framework
             Image returnImage = Image.FromStream(ms);
             return returnImage;
         }
-
+        private void addItems(AutoCompleteStringCollection col) 
+        {
+            ado.cmd.CommandText = "select design_art from article";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                col.Add(ado.dr["design_art"].ToString());
+            }
+            ado.dr.Close();
+        }
         private void ArticleSearch_Load(object sender, EventArgs e)
         {
             ado.Connect();
+
+            searchBox.AutoCompleteMode = AutoCompleteMode.Suggest;
+            searchBox.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            AutoCompleteStringCollection DataCollection = new AutoCompleteStringCollection();
+            addItems(DataCollection);
+            searchBox.AutoCompleteCustomSource = DataCollection;
+
             FilterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in FilterInfoCollection)
             {
@@ -123,6 +140,10 @@ namespace test_framework
                     }
                 }
             }
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

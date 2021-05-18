@@ -29,8 +29,8 @@ namespace test_framework
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridFrs = new System.Windows.Forms.DataGridView();
             this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,25 +66,26 @@ namespace test_framework
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panelAjout = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFrs)).BeginInit();
             this.panelAjout.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridFrs
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SkyBlue;
-            this.dataGridFrs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.dataGridFrs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridFrs.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataGridFrs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridFrs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridFrs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridFrs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridFrs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.column1,
@@ -172,7 +173,7 @@ namespace test_framework
             this.searchBoxFrs.Location = new System.Drawing.Point(743, 60);
             this.searchBoxFrs.Margin = new System.Windows.Forms.Padding(4);
             this.searchBoxFrs.Name = "searchBoxFrs";
-            this.searchBoxFrs.Size = new System.Drawing.Size(132, 25);
+            this.searchBoxFrs.Size = new System.Drawing.Size(132, 21);
             this.searchBoxFrs.TabIndex = 17;
             this.searchBoxFrs.TextChanged += new System.EventHandler(this.searchBoxFrs_TextChanged);
             // 
@@ -198,7 +199,7 @@ namespace test_framework
             this.button5.Location = new System.Drawing.Point(730, 506);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(254, 52);
+            this.button5.Size = new System.Drawing.Size(254, 47);
             this.button5.TabIndex = 15;
             this.button5.Text = "afficher tout les fournisseurs";
             this.button5.UseVisualStyleBackColor = false;
@@ -206,6 +207,7 @@ namespace test_framework
             // 
             // button12
             // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
@@ -222,7 +224,7 @@ namespace test_framework
             this.ICE.Location = new System.Drawing.Point(515, 85);
             this.ICE.Margin = new System.Windows.Forms.Padding(4);
             this.ICE.Name = "ICE";
-            this.ICE.Size = new System.Drawing.Size(132, 25);
+            this.ICE.Size = new System.Drawing.Size(132, 21);
             this.ICE.TabIndex = 43;
             // 
             // raison_social
@@ -230,7 +232,7 @@ namespace test_framework
             this.raison_social.Location = new System.Drawing.Point(515, 137);
             this.raison_social.Margin = new System.Windows.Forms.Padding(4);
             this.raison_social.Name = "raison_social";
-            this.raison_social.Size = new System.Drawing.Size(132, 25);
+            this.raison_social.Size = new System.Drawing.Size(132, 21);
             this.raison_social.TabIndex = 44;
             // 
             // tele_frs
@@ -238,7 +240,7 @@ namespace test_framework
             this.tele_frs.Location = new System.Drawing.Point(515, 294);
             this.tele_frs.Margin = new System.Windows.Forms.Padding(4);
             this.tele_frs.Name = "tele_frs";
-            this.tele_frs.Size = new System.Drawing.Size(132, 25);
+            this.tele_frs.Size = new System.Drawing.Size(132, 21);
             this.tele_frs.TabIndex = 45;
             // 
             // email_frs
@@ -246,7 +248,7 @@ namespace test_framework
             this.email_frs.Location = new System.Drawing.Point(515, 346);
             this.email_frs.Margin = new System.Windows.Forms.Padding(4);
             this.email_frs.Name = "email_frs";
-            this.email_frs.Size = new System.Drawing.Size(132, 25);
+            this.email_frs.Size = new System.Drawing.Size(132, 21);
             this.email_frs.TabIndex = 46;
             // 
             // registre_com
@@ -254,7 +256,7 @@ namespace test_framework
             this.registre_com.Location = new System.Drawing.Point(515, 398);
             this.registre_com.Margin = new System.Windows.Forms.Padding(4);
             this.registre_com.Name = "registre_com";
-            this.registre_com.Size = new System.Drawing.Size(132, 25);
+            this.registre_com.Size = new System.Drawing.Size(132, 21);
             this.registre_com.TabIndex = 47;
             // 
             // id_fiscale
@@ -262,7 +264,7 @@ namespace test_framework
             this.id_fiscale.Location = new System.Drawing.Point(515, 452);
             this.id_fiscale.Margin = new System.Windows.Forms.Padding(4);
             this.id_fiscale.Name = "id_fiscale";
-            this.id_fiscale.Size = new System.Drawing.Size(132, 25);
+            this.id_fiscale.Size = new System.Drawing.Size(132, 21);
             this.id_fiscale.TabIndex = 48;
             // 
             // adresse
@@ -279,7 +281,7 @@ namespace test_framework
             this.ville.Location = new System.Drawing.Point(515, 242);
             this.ville.Margin = new System.Windows.Forms.Padding(4);
             this.ville.Name = "ville";
-            this.ville.Size = new System.Drawing.Size(219, 25);
+            this.ville.Size = new System.Drawing.Size(219, 21);
             this.ville.TabIndex = 50;
             // 
             // label2
@@ -288,7 +290,7 @@ namespace test_framework
             this.label2.Location = new System.Drawing.Point(303, 89);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 19);
+            this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 52;
             this.label2.Text = "ICE";
             // 
@@ -298,7 +300,7 @@ namespace test_framework
             this.label3.Location = new System.Drawing.Point(303, 141);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 19);
+            this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 53;
             this.label3.Text = "Raison Social";
             // 
@@ -308,7 +310,7 @@ namespace test_framework
             this.label4.Location = new System.Drawing.Point(303, 299);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 19);
+            this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 54;
             this.label4.Text = "GSM";
             // 
@@ -318,7 +320,7 @@ namespace test_framework
             this.label5.Location = new System.Drawing.Point(303, 351);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 19);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 55;
             this.label5.Text = "E-mail";
             // 
@@ -328,7 +330,7 @@ namespace test_framework
             this.label6.Location = new System.Drawing.Point(303, 403);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 19);
+            this.label6.Size = new System.Drawing.Size(113, 13);
             this.label6.TabIndex = 56;
             this.label6.Text = "Registre Commercial";
             // 
@@ -338,7 +340,7 @@ namespace test_framework
             this.label1.Location = new System.Drawing.Point(303, 455);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 19);
+            this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 57;
             this.label1.Text = "ID fiscale";
             // 
@@ -348,7 +350,7 @@ namespace test_framework
             this.label8.Location = new System.Drawing.Point(303, 193);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 19);
+            this.label8.Size = new System.Drawing.Size(48, 13);
             this.label8.TabIndex = 58;
             this.label8.Text = "Adresse";
             // 
@@ -358,7 +360,7 @@ namespace test_framework
             this.label9.Location = new System.Drawing.Point(303, 245);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 19);
+            this.label9.Size = new System.Drawing.Size(29, 13);
             this.label9.TabIndex = 59;
             this.label9.Text = "Ville";
             // 
@@ -395,7 +397,7 @@ namespace test_framework
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
-            this.button1.Location = new System.Drawing.Point(929, 593);
+            this.button1.Location = new System.Drawing.Point(929, 578);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
@@ -440,18 +442,29 @@ namespace test_framework
             this.panelAjout.Controls.Add(this.raison_social);
             this.panelAjout.Controls.Add(this.ICE);
             this.panelAjout.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.panelAjout.Location = new System.Drawing.Point(-9, -1);
+            this.panelAjout.Location = new System.Drawing.Point(-9, -4);
             this.panelAjout.Margin = new System.Windows.Forms.Padding(4);
             this.panelAjout.Name = "panelAjout";
-            this.panelAjout.Size = new System.Drawing.Size(1068, 641);
+            this.panelAjout.Size = new System.Drawing.Size(1068, 644);
             this.panelAjout.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(443, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(226, 30);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Liste des Fournisseurs";
             // 
             // FournisseurListe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1059, 636);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panelAjout);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.dataGridFrs);
@@ -508,5 +521,6 @@ namespace test_framework
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panelAjout;
+        private System.Windows.Forms.Label label7;
     }
 }

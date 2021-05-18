@@ -63,18 +63,18 @@ namespace test_framework
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(812, 154);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 25);
+            this.textBox8.Size = new System.Drawing.Size(132, 21);
             this.textBox8.TabIndex = 61;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(10, 153);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(160, 25);
+            this.comboBox2.Size = new System.Drawing.Size(160, 20);
             this.comboBox2.TabIndex = 64;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
@@ -83,18 +83,18 @@ namespace test_framework
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(745, 57);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(199, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(199, 21);
             this.dateTimePicker1.TabIndex = 62;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(366, 55);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 25);
+            this.comboBox1.Size = new System.Drawing.Size(160, 20);
             this.comboBox1.TabIndex = 63;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -104,16 +104,16 @@ namespace test_framework
             this.label3.Location = new System.Drawing.Point(796, 36);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 19);
+            this.label3.Size = new System.Drawing.Size(77, 13);
             this.label3.TabIndex = 51;
             this.label3.Text = "date livraison";
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(573, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 25);
+            this.textBox2.Size = new System.Drawing.Size(132, 21);
             this.textBox2.TabIndex = 57;
             // 
             // label2
@@ -122,7 +122,7 @@ namespace test_framework
             this.label2.Location = new System.Drawing.Point(600, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 19);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 50;
             this.label2.Text = "code client";
             // 
@@ -132,7 +132,7 @@ namespace test_framework
             this.label1.Location = new System.Drawing.Point(401, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 19);
+            this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 49;
             this.label1.Text = "raison social";
             // 
@@ -142,34 +142,34 @@ namespace test_framework
             this.label8.Location = new System.Drawing.Point(840, 131);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 19);
+            this.label8.Size = new System.Drawing.Size(59, 13);
             this.label8.TabIndex = 56;
             this.label8.Text = "prix vente";
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(604, 154);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 25);
+            this.textBox7.Size = new System.Drawing.Size(132, 21);
             this.textBox7.TabIndex = 60;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 131);
+            this.label4.Location = new System.Drawing.Point(239, 131);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 19);
+            this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 52;
             this.label4.Text = "reference article";
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(412, 154);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 25);
+            this.textBox6.Size = new System.Drawing.Size(132, 21);
             this.textBox6.TabIndex = 59;
             // 
             // label7
@@ -178,26 +178,26 @@ namespace test_framework
             this.label7.Location = new System.Drawing.Point(633, 131);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 19);
+            this.label7.Size = new System.Drawing.Size(60, 13);
             this.label7.TabIndex = 55;
             this.label7.Text = "qte vendu";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(249, 131);
+            this.label5.Location = new System.Drawing.Point(54, 131);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 19);
+            this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 53;
             this.label5.Text = "designation";
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(220, 154);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 25);
+            this.textBox5.Size = new System.Drawing.Size(132, 21);
             this.textBox5.TabIndex = 58;
             // 
             // label6
@@ -206,7 +206,7 @@ namespace test_framework
             this.label6.Location = new System.Drawing.Point(438, 131);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 19);
+            this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 54;
             this.label6.Text = "qte stocke";
             // 
@@ -216,7 +216,7 @@ namespace test_framework
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
             this.button1.Location = new System.Drawing.Point(946, 588);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 65;
@@ -229,7 +229,7 @@ namespace test_framework
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.SkyBlue;
             this.button3.Location = new System.Drawing.Point(764, 222);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 30);
             this.button3.TabIndex = 68;
@@ -243,7 +243,7 @@ namespace test_framework
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.SkyBlue;
             this.button2.Location = new System.Drawing.Point(412, 222);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 30);
             this.button2.TabIndex = 67;
@@ -257,7 +257,7 @@ namespace test_framework
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.Color.SkyBlue;
             this.button4.Location = new System.Drawing.Point(66, 222);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 30);
             this.button4.TabIndex = 66;
@@ -280,7 +280,7 @@ namespace test_framework
             this.Column4,
             this.column5});
             this.dataGridView1.Location = new System.Drawing.Point(102, 275);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -334,7 +334,7 @@ namespace test_framework
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.SkyBlue;
             this.button5.Location = new System.Drawing.Point(604, 561);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 30);
             this.button5.TabIndex = 71;
@@ -348,7 +348,7 @@ namespace test_framework
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.SkyBlue;
             this.button6.Location = new System.Drawing.Point(258, 561);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 30);
             this.button6.TabIndex = 70;
@@ -358,7 +358,7 @@ namespace test_framework
             // 
             // Commandes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1059, 631);
@@ -386,7 +386,7 @@ namespace test_framework
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Commandes";
             this.Text = "Bon Livraison";
             this.Load += new System.EventHandler(this.Commandes_Load);

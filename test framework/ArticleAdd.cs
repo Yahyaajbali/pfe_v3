@@ -72,7 +72,18 @@ namespace test_framework
         private int lastFact = 0;
         private EncodingOptions options;
 
-       
+       private int RetrieveId()
+        {
+            int ID = 0;
+            ado.cmd.CommandText = "select max(ref_art) as max from article";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                ID = int.Parse(ado.dr["max"].ToString());
+            }
+            return ID;
+        }
 
         private void button12_Click(object sender, EventArgs e)
         {
@@ -95,7 +106,7 @@ namespace test_framework
 
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
-
+            
             ado.cmd.CommandText = "select max(idf_fac_frs) as last from facture_frs";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
@@ -116,16 +127,18 @@ namespace test_framework
                 var res2 = imageToByteArray(result);
                 var img2str = Convert.ToBase64String(res2);
 
-                ado.cmd.CommandText = "insert into article (ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA,qr) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString()) + "," +
-                                        rayon + ",'" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'," +
-                                        int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + "," +
-                                        float.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) + "," +
-                                        int.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString()) + ",'"+img2str+"')";
+                ado.cmd.CommandText = "insert into article (idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA,qr) values ("+
+                                        rayon + ",'" + dataGridView1.Rows[i].Cells[0].Value.ToString() + "'," +
+                                        int.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString()) + "," +
+                                        float.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + "," +
+                                        int.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) + ",'"+img2str+"')";
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
 
+                int lastIdArt = RetrieveId();
+
                 ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs,qte_achete,prix_achat) values (" +
-                                        int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString()) + "," +
+                                        lastIdArt + "," +
                                         lastFact + "," + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + "," +
                                         int.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + ")";
             }
@@ -135,37 +148,18 @@ namespace test_framework
             
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            if (textBox4.Text == "" || textBox5.Text == "" ||
-              textBox6.Text == "" || textBox7.Text == "" ||
-              textBox9.Text == "" || textBox11.Text == "")
-            {
-                MessageBox.Show("empty textboxes");
-                return;
-            }
-            ado.cmd.CommandText = "insert into article(ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA) values (" + int.Parse(textBox4.Text) + "," + int.Parse(comboBox1.Text) + ",'"
-                                  + textBox9.Text + "'," + int.Parse(textBox6.Text)
-                                  + "," + float.Parse(textBox7.Text)
-                                  + "," + float.Parse(textBox11.Text) + ")";
-            ado.cmd.Connection = ado.cn;
-            ado.cmd.ExecuteNonQuery();
-
-            ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs, qte_achete,prix_achat) values (" + int.Parse(textBox4.Text) + "," + lastFact +
-                                  "," + int.Parse(textBox6.Text) + "," + float.Parse(textBox5.Text) + ")";
-            ado.cmd.Connection = ado.cn;
-            ado.cmd.ExecuteNonQuery();
-        }
+        
 
         private void vider()
         {
-            textBox4.Clear(); textBox9.Clear(); textBox6.Clear(); textBox5.Clear(); textBox7.Clear(); textBox11.Clear();
+            //textBox4.Clear();
+            textBox9.Clear(); textBox6.Clear(); textBox5.Clear(); textBox7.Clear(); textBox11.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             double total = double.Parse(textBox5.Text) * double.Parse(textBox6.Text);
-            dataGridView1.Rows.Add(textBox4.Text, textBox9.Text, textBox6.Text, total, float.Parse(textBox7.Text), textBox11.Text);
+            dataGridView1.Rows.Add(textBox9.Text, textBox6.Text, total, float.Parse(textBox7.Text), textBox11.Text);
             vider();
         }
 

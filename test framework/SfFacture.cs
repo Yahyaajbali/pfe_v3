@@ -31,6 +31,7 @@ namespace test_framework
 
             while (ado.dr.Read())
             {
+                label1.Text = "Factures du client : " + ado.dr["raisonsocial"] + " .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["date_liv"], ado.dr["total_pht_bl"], ado.dr["taux_tva_bl"], ado.dr["montant_tva_bl"], ado.dr["total_ttc_bl"], ado.dr["idf_cmnd"], ado.dr["raisonsocial"]);
             }
             ado.dr.Close();
@@ -58,6 +59,7 @@ namespace test_framework
 
             while (ado.dr.Read())
             {
+                label1.Text = "Facture Numero : " + ado.dr["idf_bl"] + " .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["ref_art"], ado.dr["design_art"], ado.dr["qte_liv"], ado.dr["prix_liv"]);
             }
             ado.dr.Close();
@@ -86,6 +88,7 @@ namespace test_framework
 
             while (ado.dr.Read())
             {
+                label1.Text = "Factures du client : " + ado.dr["raisonsocial"] + " .";
                 dataGridView1.Rows.Add(ado.dr["idf_bl"], ado.dr["date_liv"], ado.dr["total_pht_bl"], ado.dr["taux_tva_bl"], ado.dr["montant_tva_bl"], ado.dr["total_ttc_bl"], ado.dr["idf_cmnd"], ado.dr["raisonsocial"]);
             }
             ado.dr.Close();

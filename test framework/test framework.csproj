@@ -90,6 +90,12 @@
     <Compile Include="ArticleSearch.Designer.cs">
       <DependentUpon>ArticleSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="article_alim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="article_alim.Designer.cs">
+      <DependentUpon>article_alim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fact.cs">
       <DependentUpon>Fact.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArticleSearch.resx">
       <DependentUpon>ArticleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="article_alim.resx">
+      <DependentUpon>article_alim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fact.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

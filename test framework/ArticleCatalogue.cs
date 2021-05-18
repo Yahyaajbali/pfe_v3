@@ -47,6 +47,8 @@ namespace test_framework
         {
             ado.Connect();
 
+            dataGridArt.Columns["Column11"].Visible = false;
+
             dataGridArt.Rows.Clear();
             ado.cmd.CommandText = "select * from article";
             ado.cmd.Connection = ado.cn;

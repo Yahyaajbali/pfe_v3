@@ -133,5 +133,10 @@ namespace test_framework
         {
 
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            OpenForm(new article_alim());
+        }
     }
 }
