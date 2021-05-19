@@ -62,6 +62,8 @@ namespace test_framework
             ado.cmd.CommandText = "update article set qte_stock = " + qtefnl + ",prix_ht_stock =" + textBox8.Text + " where ref_art = " + textBox5.Text;
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
+
+            MessageBox.Show("Done");
         }
     }
 }

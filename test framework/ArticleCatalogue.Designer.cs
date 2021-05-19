@@ -52,7 +52,7 @@ namespace test_framework
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::test_framework.Properties.Resources.icons8_login_rounded_30;
             this.button1.Location = new System.Drawing.Point(948, 580);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 1;
@@ -101,7 +101,7 @@ namespace test_framework
             this.searchBoxArt.Location = new System.Drawing.Point(665, 70);
             this.searchBoxArt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBoxArt.Name = "searchBoxArt";
-            this.searchBoxArt.Size = new System.Drawing.Size(192, 25);
+            this.searchBoxArt.Size = new System.Drawing.Size(192, 21);
             this.searchBoxArt.TabIndex = 9;
             // 
             // label7
@@ -112,7 +112,7 @@ namespace test_framework
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(543, 75);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 19);
+            this.label7.Size = new System.Drawing.Size(92, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Reference article";
             // 
@@ -178,7 +178,8 @@ namespace test_framework
             // 
             // Column10
             // 
-            dataGridViewCellStyle2.Format = "C2";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
             dataGridViewCellStyle2.NullValue = null;
             this.Column10.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column10.HeaderText = "Prix UHT";
@@ -207,7 +208,7 @@ namespace test_framework
             // 
             // ArticleCatalogue
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(1059, 631);
@@ -218,7 +219,7 @@ namespace test_framework
             this.Controls.Add(this.dataGridArt);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ArticleCatalogue";
             this.Text = "ArticleCatalogue";
             this.Load += new System.EventHandler(this.ArticleCatalogue_Load);
