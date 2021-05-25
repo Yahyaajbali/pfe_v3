@@ -67,6 +67,15 @@ namespace test_framework
             }
             ado.dr.Close();
 
+            ado.cmd.CommandText = "select design_art from article";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                comboBox3.Items.Add(ado.dr["design_art"]);
+            }
+            ado.dr.Close();
+
         }
 
         private int lastFact = 0;
@@ -85,9 +94,24 @@ namespace test_framework
             return ID;
         }
 
+        int qtt = 0;
+
+        private int Retrieve(string s)
+        {
+            int c = 0;
+            ado.cmd.CommandText = "select qte_stock from article where design_art = '"+s+"'";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                c = int.Parse(ado.dr["qte_stock"].ToString());
+            }
+            ado.dr.Close();
+            return c;
+        }
         private void button12_Click(object sender, EventArgs e)
         {
-
+           
 
             double pht = 0;
             double totalPHT = 0;
@@ -126,12 +150,13 @@ namespace test_framework
                 var result = new Bitmap(qr.Write(dataGridView1.Rows[i].Cells[0].Value.ToString().Trim()));
                 var res2 = imageToByteArray(result);
                 var img2str = Convert.ToBase64String(res2);
+                string design = dataGridView1.Rows[i].Cells[0].Value.ToString();
 
-                ado.cmd.CommandText = "insert into article (idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA,qr) values ("+
-                                        rayon + ",'" + dataGridView1.Rows[i].Cells[0].Value.ToString() + "'," +
-                                        int.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString()) + "," +
-                                        float.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + "," +
-                                        int.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) + ",'"+img2str+"')";
+                qtt = Retrieve(design);
+                int qttnv = qtt + int.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString());
+                ado.cmd.CommandText = "update article set idf_rayon = " + rayon + " ,qte_stock = " + qttnv + " ,prix_ht_stock = " + float.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString()) + ",taux_TVA = " + int.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString()) + " ,qr ='" + img2str + "' where design_art = '" + dataGridView1.Rows[i].Cells[0].Value.ToString()+"'";
+
+
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
 
@@ -153,13 +178,13 @@ namespace test_framework
         private void vider()
         {
             //textBox4.Clear();
-            textBox9.Clear(); textBox6.Clear(); textBox5.Clear(); textBox7.Clear(); textBox11.Clear();
+            comboBox3.Text = ""; textBox6.Clear(); textBox5.Clear(); textBox7.Clear(); textBox11.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             double total = double.Parse(textBox5.Text) * double.Parse(textBox6.Text);
-            dataGridView1.Rows.Add(textBox9.Text, textBox6.Text, total, float.Parse(textBox7.Text), textBox11.Text);
+            dataGridView1.Rows.Add(comboBox3.Text, textBox6.Text, total, float.Parse(textBox7.Text), textBox11.Text);
             vider();
         }
 
@@ -181,6 +206,18 @@ namespace test_framework
             {
                 dataGridView1.Rows.RemoveAt(this.dataGridView1.SelectedRows[0].Index);
             }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ado.cmd.CommandText= "select prix_ht_stock from article where design_art = '"+comboBox3.Text+"'";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                textBox7.Text = ado.dr["prix_ht_stock"].ToString();
+            }
+            ado.dr.Close();
         }
     }
 }
